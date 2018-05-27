@@ -78,5 +78,6 @@ function init() {
         audio.play();
         document.querySelector('#video-bg').play();
         loop();
+        document.querySelector('.ready-go').requestFullscreen();
     });
 }
