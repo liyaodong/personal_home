@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>404 NOT found</title>
+        <link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+        <style>
+         body, html {
+             font-family: 'Sunflower', sans-serif;
+             padding: 0;
+             margin: 0;
+             width: 100vw;
+             height: 100vh;
+         }
+
+         body {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+         }
+        </style>
+    </head>
+    <body>
+        <h1>
+            404 Page Not Found
+        </h1>
+        <h2>
+            Sorry, the page you want to visit already migrate to:
+            <a href="" id="page-url"></a>
+        </h2>
+
+        <script>
+         var link = document.querySelector('#page-url');
+         var targetUrl = 'http://blog.liyaodong.com' + location.pathname;
+         link.innerHTML = targetUrl;
+         link.href = targetUrl;
+        </script>
+    </body>
+</html>
