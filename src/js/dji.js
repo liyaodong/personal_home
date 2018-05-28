@@ -73,11 +73,15 @@ function changeFrequency(range){
 function init() {
     document.querySelector('#go').addEventListener('click', function(e) {
         e.preventDefault();
+        const $readyGo = document.querySelector('.ready-go');
         document.querySelector('.welcome').classList.add('hide');
-        document.querySelector('.ready-go').classList.add('in');
+        $readyGo.classList.add('in');
         audio.play();
         document.querySelector('#video-bg').play();
         loop();
-        document.querySelector('.ready-go').requestFullscreen();
+
+        if ($readyGo.requestFullscreen) {
+            document.querySelector('.ready-go').requestFullscreen();
+        }
     });
 }
