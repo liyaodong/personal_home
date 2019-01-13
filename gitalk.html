@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+        <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    </head>
+    <body>
+        <div id="gitalk-container"></div>
+        <script>
+         var postInfo = window.location.hash.replace('#', '').split('|');
+         var postUrl = decodeURIComponent(postInfo[1]);
+         var gitalk = new Gitalk({
+             clientID: '447ecb00a77864816ee5',
+             clientSecret: '695801ffc9061275001e812a1aeedbabab669d03',
+             repo: 'blog',
+             owner: 'liyaodong',
+             admin: ['liyaodong'],
+             id: postUrl,      // Ensure uniqueness and length less than 50
+             title: postInfo[2],
+             body: postUrl,
+             language: 'en',
+             distractionFreeMode: false  // Facebook-like distraction free mode
+         })
+
+         gitalk.render('gitalk-container')
+        </script>
+    </body>
+</html>
