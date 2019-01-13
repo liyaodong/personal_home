@@ -38,7 +38,7 @@
          var disqus_config = function () {
              var post_info = window.location.hash.replace('#', '').split('|');
              this.page.identifier = post_info[0]; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-             this.page.url = post_info[1];  // Replace PAGE_URL with your page's canonical URL variable
+             this.page.url = decodeURIComponent(post_info[1]);  // Replace PAGE_URL with your page's canonical URL variable
          };
          (function() {  // DON'T EDIT BELOW THIS LINE
              var d = document, s = d.createElement('script');
