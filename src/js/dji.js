@@ -32,7 +32,7 @@ analyser.connect(context.destination)
 init();
 
 function loadBackgroundMusic() {
-    audio.src = 'http://oax4654gb.bkt.clouddn.com/2018/5/27/Hans Zimmer - S.T.A.Y.mp3';
+    audio.src = 'https://image.liyaodong.com/Hans%20Zimmer%20-%20S.T.A.Y.mp3';
 }
 
 function loop(){
