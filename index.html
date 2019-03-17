@@ -28,6 +28,106 @@
          list-style-type: none;
      }
 
+     .subsite {
+         display: none;
+     }
+
+
+     body:not([data-subsite="home"]) .site-home {
+         display: none;
+     }
+
+     body[data-subsite="blog"] .subsite--blog,
+     body[data-subsite="photos"] .subsite--photos,
+     body[data-subsite="reading"] .subsite--reading,
+     body[data-subsite="game"] .subsite--game {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .subsite {
+         min-height: 100vh;
+     }
+
+
+     .subsite__back {
+         position: fixed;
+         right: 10%;
+         bottom: 5%;
+         right: 6%;
+         bottom: 3%;
+         width: 50px;
+         height: 50px;
+         background: #4d88f5 url(./images/back.svg) center center no-repeat;
+         background-size: 32px 32px;
+         border-radius: 50%;
+         box-shadow: 0px 2px 10px rgba(0, 0, 0, .3);
+     }
+
+     .subsite__hero {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         min-height: 50vw;
+         position: relative;
+         overflow: hidden;
+     }
+
+     .subsite__hero::after {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         background-size: cover;
+         background-position: center bottom;
+         background-repeat: no-repeat;
+         z-index: -1;
+     }
+
+     .subsite__body {
+         padding: 15px;
+     }
+
+     .subsite__body.wip {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-grow: 1;
+         font-size: 30px;
+     }
+
+     .subsite--blog {
+     }
+
+     .subsite--blog__placeholder:not(:last-of-type) {
+         margin-bottom: 30px;
+         padding-bottom: 30px;
+         border-bottom: 1px solid #E0E0E0;
+     }
+
+     .subsite--blog__placeholder-title {
+         background-color: #E0E0E0;
+         height: 20px;
+         width: 40%;
+     }
+
+     .subsite--blog__placeholder-desc-small,
+     .subsite--blog__placeholder-desc-large {
+         background-color: #ECECEC;
+         height: 20px;
+         margin-top: 20px;
+     }
+
+     .subsite--blog__placeholder-desc-small {
+         width: 65%;
+     }
+
+     .subsite--blog__placeholder-desc-large {
+         width: 80%;
+     }
+
      .wrapper {
          height: 100vh;
          overflow-y: auto;
@@ -61,7 +161,6 @@
          background: url('./images/bg.jpg') center center no-repeat;
          background-size: cover;
          transform: translateZ(-1px) scale(1.56);
-         transform-origin: center center;
          z-index: -1;
      }
 
@@ -128,15 +227,19 @@
          z-index: -1;
      }
 
+     .subsite--blog .subsite__hero::after,
      .subsite-list__item--blog::after {
          background-image: url('./images/house.jpg');
      }
+     .subsite--photos .subsite__hero::after,
      .subsite-list__item--photos::after {
          background-image: url('./images/cat.jpg');
      }
+     .subsite--reading .subsite__hero::after,
      .subsite-list__item--reading::after {
          background-image: url('./images/reading.jpg');
      }
+     .subsite--game .subsite__hero::after,
      .subsite-list__item--game::after {
          background-image: url('./images/beer.jpg');
      }
@@ -144,15 +247,16 @@
      .subsite-list__item a {
          width: 100%;
          height: 100%;
-         color: #FFFFFF;
-         text-transform: uppercase;
          text-decoration: none;
          display: flex;
          align-items: center;
          justify-content: center;
      }
 
+     .subsite__name,
      .subsite-list__item h3 {
+         text-transform: uppercase;
+         color: #FFFFFF;
          font-weight: 200;
          font-size: 50px;
          margin: 0;
@@ -161,7 +265,7 @@
      }
     </style>
     <body>
-        <section class="wrapper">
+        <section class="wrapper site-home">
             <section class="site-screen site-screen--first">
                 <img width="115" height="115" alt="Yaodong Li's avatar" src="./images/avatar.png"/>
                 <h1 class="site-name">Yaodong Li</h1>
@@ -203,5 +307,58 @@
                 </ul>
             </section>
         </section>
+
+        <section class="subsite subsite--blog">
+            <section class="subsite__hero">
+                <h2 class="subsite__name">BLOG</h2>
+            </section>
+            <section class="subsite__body">
+                <div class="subsite--blog__placeholder">
+                    <div class="subsite--blog__placeholder-title"></div>
+                    <div class="subsite--blog__placeholder-desc-small"></div>
+                    <div class="subsite--blog__placeholder-desc-large"></div>
+                </div>
+                <div class="subsite--blog__placeholder">
+                    <div class="subsite--blog__placeholder-title"></div>
+                    <div class="subsite--blog__placeholder-desc-small"></div>
+                    <div class="subsite--blog__placeholder-desc-large"></div>
+                </div>
+                <div class="subsite--blog__placeholder">
+                    <div class="subsite--blog__placeholder-title"></div>
+                    <div class="subsite--blog__placeholder-desc-small"></div>
+                    <div class="subsite--blog__placeholder-desc-large"></div>
+                </div>
+            </section>
+            <a href="/" class="subsite__back"></a>
+        </section>
+
+        <section class="subsite subsite--reading">
+            <section class="subsite__hero">
+                <h2 class="subsite__name">reading</h2>
+            </section>
+            <section class="subsite__body wip">
+                Work In Progress
+            </section>
+            <a href="/" class="subsite__back"></a>
+        </section>
+        <section class="subsite subsite--photos">
+            <section class="subsite__hero">
+                <h2 class="subsite__name">photos</h2>
+            </section>
+            <section class="subsite__body wip">
+                Work In Progress
+            </section>
+            <a href="/" class="subsite__back"></a>
+        </section>
+        <section class="subsite subsite--game">
+            <section class="subsite__hero">
+                <h2 class="subsite__name">game</h2>
+            </section>
+            <section class="subsite__body wip">
+                Work In Progress
+            </section>
+            <a href="/" class="subsite__back"></a>
+        </section>
+        <script src="./src/js/app.js"></script>
     </body>
 </html>
