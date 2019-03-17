@@ -4,6 +4,8 @@
         <meta charset="UTF-8"/>
         <title>Yaodong Li</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
     </head>
     <style>
      body {
@@ -38,6 +40,7 @@
      }
 
      body[data-subsite="blog"] .subsite--blog,
+     body[data-subsite^="posts"] .subsite--post,
      body[data-subsite="photos"] .subsite--photos,
      body[data-subsite="reading"] .subsite--reading,
      body[data-subsite="game"] .subsite--game {
@@ -48,7 +51,6 @@
      .subsite {
          min-height: 100vh;
      }
-
 
      .subsite__back {
          position: fixed;
@@ -101,6 +103,7 @@
      .subsite--blog {
      }
 
+     .subsite--blog .article-item,
      .subsite--blog__placeholder:not(:last-of-type) {
          margin-bottom: 30px;
          padding-bottom: 30px;
@@ -116,8 +119,8 @@
      .subsite--blog__placeholder-desc-small,
      .subsite--blog__placeholder-desc-large {
          background-color: #ECECEC;
-         height: 20px;
-         margin-top: 20px;
+         height: 15px;
+         margin-top: 15px;
      }
 
      .subsite--blog__placeholder-desc-small {
@@ -126,6 +129,31 @@
 
      .subsite--blog__placeholder-desc-large {
          width: 80%;
+     }
+
+     .subsite--blog .article-item a {
+         color: #000;
+         text-decoration: none;
+     }
+
+     .subsite--blog .article-item-title {
+         font-size: 20px;
+         margin: 0;
+     }
+
+     .subsite--blog .article-item-summary {
+         margin-top: 10px;
+     }
+
+     .subsite--blog .article-item-date,
+     .subsite--blog .article-item-summary a,
+     .subsite--blog .article-item-summary {
+         font-size: 14px;
+         color: #555;
+     }
+
+     .subsite--blog .article-item-summary p {
+         margin: 10px 0 0 0;
      }
 
      .wrapper {
@@ -263,6 +291,51 @@
          background: rgba(0, 0, 0, .25);
          padding: 0 10px;
      }
+
+     .single {
+         line-height: 1.625;
+         color: #4a4a4a;
+         max-width: 700px;
+
+         amp-img {
+             margin: 15px auto;
+             text-align: center;
+         }
+
+         code {
+             color: $color-yellow;
+             font-size: 14px;
+             font-weight: bold;
+             margin: 5px;
+         }
+
+         pre > code {
+             font-weight: 600;
+             margin: 0;
+         }
+
+         div.highlight {
+             box-shadow: 0 3px 3px 1px #d2c7b5;
+         }
+
+         .chroma {
+             background-color: transparent;
+         }
+
+         a {
+             text-decoration: underline;
+             &:hover {
+                 color: #000;
+             }
+         }
+     }
+
+     .post-title {
+         text-align: center;
+         font-family: $titleFont;
+         font-size: 32px;
+         margin: 0 0 5px 0;
+     }
     </style>
     <body>
         <section class="wrapper site-home">
@@ -358,6 +431,19 @@
                 Work In Progress
             </section>
             <a href="/" class="subsite__back"></a>
+        </section>
+        <section class="subsite subsite--post">
+            <section class="subsite__body">
+                <div class="subsite--post__placeholder">
+                    <div class="subsite--blog__placeholder-title"></div>
+                    <div class="subsite--blog__placeholder-desc-small"></div>
+                    <div class="subsite--blog__placeholder-desc-large"></div>
+                    <div class="subsite--blog__placeholder-desc-large"></div>
+                    <div class="subsite--blog__placeholder-desc-large"></div>
+                    <div class="subsite--blog__placeholder-desc-large"></div>
+                </div>
+            </section>
+            <a href="#blog" class="subsite__back"></a>
         </section>
         <script src="./src/js/app.js"></script>
     </body>
