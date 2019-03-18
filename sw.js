@@ -70,9 +70,17 @@ if (workbox) {
   },
   {
     "url": "workbox-config.js",
-    "revision": "ec1060e16f22fe39c9cc9f63109ff07b"
+    "revision": "6e8d5500be754d0a93b8a54786e5a3f9"
   }
 ]);
+
+  self.addEventListener('install', event => {
+    const urls = [
+      'https://cdn.ampproject.org/v0.js',
+    ];
+    const cacheName = workbox.core.cacheNames.runtime;
+    event.waitUntil(caches.open(cacheName).then(cache => cache.addAll(urls)));
+  });
 } else {
   console.log(`Boo! Workbox didn't load`);
 }
