@@ -3,5 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Yaodong Li <mail@liyaodong.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server ./docs",
+    "build": "workbox injectManifest workbox-config.js"
+  }
 }

@@ -402,7 +402,7 @@
                     <div class="subsite--blog__placeholder-desc-large"></div>
                 </div>
             </section>
-            <a href="/" class="subsite__back"></a>
+            <a href="#home" class="subsite__back"></a>
         </section>
 
         <section class="subsite subsite--reading">
@@ -412,7 +412,7 @@
             <section class="subsite__body wip">
                 Work In Progress
             </section>
-            <a href="/" class="subsite__back"></a>
+            <a href="#home" class="subsite__back"></a>
         </section>
         <section class="subsite subsite--photos">
             <section class="subsite__hero">
@@ -421,7 +421,7 @@
             <section class="subsite__body wip">
                 Work In Progress
             </section>
-            <a href="/" class="subsite__back"></a>
+            <a href="#home" class="subsite__back"></a>
         </section>
         <section class="subsite subsite--game">
             <section class="subsite__hero">
@@ -430,7 +430,7 @@
             <section class="subsite__body wip">
                 Work In Progress
             </section>
-            <a href="/" class="subsite__back"></a>
+            <a href="#home" class="subsite__back"></a>
         </section>
         <section class="subsite subsite--post">
             <section class="subsite__body">
@@ -446,5 +446,19 @@
             <a href="#blog" class="subsite__back"></a>
         </section>
         <script src="./src/js/app.js"></script>
+
+        <script>
+         if ('serviceWorker' in navigator) {
+             window.addEventListener('load', () => {
+                 navigator.serviceWorker.register('./sw.js')
+                          .then(registration => {
+                              console.log(`Service Worker registered! Scope: ${registration.scope}`);
+                          })
+                          .catch(err => {
+                              console.log(`Service Worker registration failed: ${err}`);
+                          });
+             });
+         }
+        </script>
     </body>
 </html>
