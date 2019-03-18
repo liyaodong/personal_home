@@ -54,7 +54,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "b928c623e5e015297573590a147a4148"
+    "revision": "210fd29485e2fa5560633421a599aba7"
   },
   {
     "url": "src/css/app.css",
@@ -62,7 +62,7 @@ if (workbox) {
   },
   {
     "url": "src/js/app.js",
-    "revision": "e027cbf566b15873e7d01b0c7091c491"
+    "revision": "221927bf0b7d718b2a77109fea6f01a9"
   },
   {
     "url": "src/js/dji.js",

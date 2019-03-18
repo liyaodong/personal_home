@@ -66,6 +66,11 @@
     };
 
     const loadPost = path => {
+        const $postPage = document.querySelector('.subsite--post');
+        const $container = document.querySelector('.subsite--post .subsite__article');
+        $container.innerHTML = '';
+        $postPage.classList.add('is-loading');
+
         fetch(`https://blog.liyaodong.com/${path}`)
             .then(res => res.text())
             .then(html => {
@@ -76,8 +81,7 @@
                 return el.querySelector('section.single');
             })
             .then(content => {
-                const $container = document.querySelector('.subsite--post .subsite__body');
-                $container.innerHTML = '';
+                $postPage.classList.remove('is-loading');
                 $container.append(content);
                 window.scrollTo(0, 0);
             });
