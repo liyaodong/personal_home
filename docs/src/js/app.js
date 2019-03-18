@@ -79,6 +79,7 @@
                 const $container = document.querySelector('.subsite--post .subsite__body');
                 $container.innerHTML = '';
                 $container.append(content);
+                window.scrollTo(0, 0);
             });
     };
 
