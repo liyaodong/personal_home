@@ -62,11 +62,15 @@ if (workbox) {
   },
   {
     "url": "src/js/app.js",
-    "revision": "3aa7706634ca441e801e33d341a85f1d"
+    "revision": "e027cbf566b15873e7d01b0c7091c491"
   },
   {
     "url": "src/js/dji.js",
     "revision": "b662c78bf9ca0c7f422d5de645c5d84e"
+  },
+  {
+    "url": "workbox-config.js",
+    "revision": "ec1060e16f22fe39c9cc9f63109ff07b"
   }
 ]);
 } else {

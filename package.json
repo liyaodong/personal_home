@@ -5,7 +5,7 @@
   "author": "Yaodong Li <mail@liyaodong.com>",
   "license": "MIT",
   "scripts": {
-    "start": "http-server ./docs",
+    "start": "http-server ./",
     "build": "workbox injectManifest workbox-config.js"
   }
 }
