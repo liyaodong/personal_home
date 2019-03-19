@@ -22,4 +22,9 @@ if (workbox) {
     /(.*)pbs\.twimg\.com(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
+
+  workbox.router.registerRoute(
+    /(.*)image\.liyaodong\.com(.*)/,
+    workbox.strategies.staleWhileRevalidate()
+  );
 }
