@@ -1,8 +1,6 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.5.0/workbox-sw.js');
 
 if (workbox) {
-  console.log(`Yay! Workbox is loaded`);
-
   workbox.precaching.precacheAndRoute([
   {
     "url": "404.html",
@@ -74,13 +72,23 @@ if (workbox) {
   }
 ]);
 
-  self.addEventListener('install', event => {
-    const urls = [
-      'https://cdn.ampproject.org/v0.js',
-    ];
-    const cacheName = workbox.core.cacheNames.runtime;
-    event.waitUntil(caches.open(cacheName).then(cache => cache.addAll(urls)));
-  });
-} else {
-  console.log(`Boo! Workbox didn't load`);
+  workbox.router.registerRoute(
+    /(.*)cdn\.ampproject\.org(.*)/,
+    workbox.strategies.staleWhileRevalidate()
+  );
+
+  workbox.router.registerRoute(
+    /(.*)platform\.twitter\.com(.*)/,
+    workbox.strategies.staleWhileRevalidate()
+  );
+
+  workbox.router.registerRoute(
+    /(.*)blog\.liyaodong\.com(.*)/,
+    workbox.strategies.staleWhileRevalidate()
+  );
+
+  workbox.router.registerRoute(
+    /(.*)pbs\.twimg\.com(.*)/,
+    workbox.strategies.staleWhileRevalidate()
+  );
 }
