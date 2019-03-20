@@ -43,6 +43,38 @@ if (workbox) {
     "revision": "fd4265aca23e60764ed07f3ffa9b6a09"
   },
   {
+    "url": "images/icons/icon-128x128.png",
+    "revision": "80017350757af7257af3b28db5017773"
+  },
+  {
+    "url": "images/icons/icon-144x144.png",
+    "revision": "344a93cde49eafac02f8cb9747b40f4f"
+  },
+  {
+    "url": "images/icons/icon-152x152.png",
+    "revision": "1562bf901c0a770e25af8ac9ba6eb3d6"
+  },
+  {
+    "url": "images/icons/icon-192x192.png",
+    "revision": "2a8789e751495aba76b0da4019aa3d5a"
+  },
+  {
+    "url": "images/icons/icon-384x384.png",
+    "revision": "fae51583d6de07cc70dcf4b98fb7c31d"
+  },
+  {
+    "url": "images/icons/icon-512x512.png",
+    "revision": "68727a02f9ff37476034daa95e7faa02"
+  },
+  {
+    "url": "images/icons/icon-72x72.png",
+    "revision": "a404403b6a87d12a8ae5ee8cad1da3f7"
+  },
+  {
+    "url": "images/icons/icon-96x96.png",
+    "revision": "215e3efbc4fdf1e017fc090cdfc5cb40"
+  },
+  {
     "url": "images/reading.jpg",
     "revision": "d75884093cec29c4d9be3ad9e2623c8c"
   },
@@ -52,7 +84,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "977037d0fc0a33d0936105f47989a61b"
+    "revision": "8e0626145e6724f944c8c6c1734595e3"
   },
   {
     "url": "src/css/app.css",
@@ -68,7 +100,11 @@ if (workbox) {
   },
   {
     "url": "workbox-config.js",
-    "revision": "6e8d5500be754d0a93b8a54786e5a3f9"
+    "revision": "3400a981de61570cfc728e43ec167244"
+  },
+  {
+    "url": "manifest.json",
+    "revision": "685bc802d577564196bf1d92500ef315"
   }
 ]);
 
