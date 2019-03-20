@@ -27,4 +27,9 @@ if (workbox) {
     /(.*)image\.liyaodong\.com(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
+
+  workbox.router.registerRoute(
+    /(.*)cdn\.jsdelivr\.net(.*)/,
+    workbox.strategies.staleWhileRevalidate()
+  );
 }

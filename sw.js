@@ -84,7 +84,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "8e0626145e6724f944c8c6c1734595e3"
+    "revision": "635c133092162ec0920e92a864dd3eb4"
   },
   {
     "url": "src/css/app.css",
@@ -100,11 +100,11 @@ if (workbox) {
   },
   {
     "url": "workbox-config.js",
-    "revision": "3400a981de61570cfc728e43ec167244"
+    "revision": "d3ec773c007395ff9e6ae74acca436f9"
   },
   {
-    "url": "manifest.json",
-    "revision": "685bc802d577564196bf1d92500ef315"
+    "url": "manifest.webmanifest",
+    "revision": "224ab9b4518b741a14e031d128b9f11e"
   }
 ]);
 
@@ -130,6 +130,11 @@ if (workbox) {
 
   workbox.router.registerRoute(
     /(.*)image\.liyaodong\.com(.*)/,
+    workbox.strategies.staleWhileRevalidate()
+  );
+
+  workbox.router.registerRoute(
+    /(.*)cdn\.jsdelivr\.net(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
 }

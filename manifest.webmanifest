@@ -1,8 +1,8 @@
 {
   "name": "Yaodong Li",
   "short_name": "Vanilla",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#F9F8F0",
+  "background_color": "#F9F8F0",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
