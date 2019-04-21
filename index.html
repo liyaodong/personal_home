@@ -94,6 +94,8 @@
 
      .subsite__body {
          padding: 15px;
+         max-width: 700px;
+         margin: 0 auto;
      }
 
      .subsite__body.wip {
@@ -277,40 +279,6 @@
         }
     }
 
-     @media screen and (min-width: 720px) {
-         .site-home {
-             background-color: #fff;
-             background: linear-gradient(-45deg, hsla(0, 80%, 81%, 1), hsla(180, 80%, 81%, 1), hsla(360, 80%, 81%, 1));
-	         background-size: 400% 400%;
-             animation: bgGradient 15s ease infinite;
-         }
-
-         .subsite-list {
-             max-width: 960px;
-             flex-wrap: wrap;
-             flex-direction: row;
-             margin:  0 auto;
-             transform: none;
-             align-items: center;
-             justify-content: space-around;
-         }
-         .subsite-list__item {
-             width: 40%;
-             border-radius: 50px;
-             overflow: hidden;
-             transition: transform 300ms, filter 300ms;
-             filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, .5));
-         }
-         .subsite-list__item:hover {
-             transform: translateY(-10%);
-             filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, .5));
-
-         }
-         .subsite-list__item::after {
-             background-size: cover;
-         }
-     }
-
      .subsite--blog .subsite__hero::after,
      .subsite-list__item--blog::after {
          background-image: url('./images/house.jpg');
@@ -391,6 +359,47 @@
          font-family: $titleFont;
          font-size: 32px;
          margin: 0 0 5px 0;
+     }
+
+     /* desktop media querys */
+     @media screen and (min-width: 720px) {
+         .site-home {
+             background-color: #fff;
+             background: linear-gradient(-45deg, hsla(0, 80%, 81%, 1), hsla(180, 80%, 81%, 1), hsla(360, 80%, 81%, 1));
+	         background-size: 400% 400%;
+             animation: bgGradient 15s ease infinite;
+         }
+
+         .subsite-list {
+             max-width: 960px;
+             flex-wrap: wrap;
+             flex-direction: row;
+             margin:  0 auto;
+             transform: none;
+             align-items: center;
+             justify-content: space-around;
+         }
+         .subsite-list__item {
+             width: 40%;
+             border-radius: 50px;
+             overflow: hidden;
+             transition: transform 300ms, filter 300ms;
+             filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, .5));
+         }
+         .subsite-list__item:hover {
+             transform: translateY(-10%);
+             filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, .5));
+
+         }
+         .subsite-list__item::after {
+             background-size: cover;
+         }
+         .subsite__hero {
+             min-height: 20vw;
+         }
+         .subsite__body {
+             margin-top: 30px;
+         }
      }
     </style>
     <body>
