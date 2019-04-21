@@ -47,7 +47,7 @@
      body[data-subsite^="posts"] .subsite--post,
      body[data-subsite="photos"] .subsite--photos,
      body[data-subsite="reading"] .subsite--reading,
-     body[data-subsite="game"] .subsite--game {
+     body[data-subsite="slides"] .subsite--slides {
          display: flex;
          flex-direction: column;
      }
@@ -291,8 +291,8 @@
      .subsite-list__item--reading::after {
          background-image: url('./images/reading.jpg');
      }
-     .subsite--game .subsite__hero::after,
-     .subsite-list__item--game::after {
+     .subsite--slides .subsite__hero::after,
+     .subsite-list__item--slides::after {
          background-image: url('./images/beer.jpg');
      }
 
@@ -361,6 +361,18 @@
          margin: 0 0 5px 0;
      }
 
+     .subsite--slides__link {
+         color: #000;
+         font-size: 20px;
+         text-decoration: none;
+         margin: 20px 0;
+         display: block;
+         padding: 5px 10px;
+     }
+     .subsite--slides__link:hover {
+         background-color: #f1efe6;
+     }
+
      /* desktop media querys */
      @media screen and (min-width: 720px) {
          .site-home {
@@ -411,7 +423,7 @@
                 <ul class="hobby-list">
                     <li>Web Developer</li>
                     <li>Geek</li>
-                    <li>Gamer</li>
+                    <li>Slidesr</li>
                     <li>Photographer</li>
                 </ul>
                 <p class="site-introduce">
@@ -437,9 +449,9 @@
                             <h3>READING</h3>
                         </a>
                     </li>
-                    <li class="subsite-list__item subsite-list__item--game">
-                        <a href="#game">
-                            <h3>GAME</h3>
+                    <li class="subsite-list__item subsite-list__item--slides">
+                        <a href="#slides">
+                            <h3>SLIDES</h3>
                         </a>
                     </li>
                 </ul>
@@ -488,12 +500,19 @@
             </section>
             <a href="#home" class="subsite__back"></a>
         </section>
-        <section class="subsite subsite--game">
+        <section class="subsite subsite--slides">
             <section class="subsite__hero">
-                <h2 class="subsite__name">game</h2>
+                <h2 class="subsite__name">slides</h2>
             </section>
-            <section class="subsite__body wip">
-                Work In Progress
+            <section class="subsite__body">
+                <ul>
+                    <li><a class="subsite--slides__link" href="https://www.icloud.com/keynote/07O5BBcdW7VdUY4DroE56xgSA#LambdaCalculus" target="_blank">Lambda 演算 —— 从入门到放弃</a></li>
+                    <li><a class="subsite--slides__link" href="https://liyaodong.com/css-engineering/#/" target="_blank">CSS工程化与调试之路</a></li>
+                    <li><a class="subsite--slides__link" href="https://liyaodong.com/introduce_electron/" target="_blank">Desktop app development with frontend tech</a></li>
+                    <li><a class="subsite--slides__link" href="https://liyaodong.com/google_io_2018_redux/google_io_2018_redux.html" target="_blank">Google I/O 2018 Redux</a></li>
+                    <li><a class="subsite--slides__link" href="https://liyaodong.com/amp_stories/amp.html" target="_blank">Build blazing fast website with AMP</a></li>
+                    <li><a class="subsite--slides__link" href="https://liyaodong.com/introduce_to_react_hooks/README.html" target="_blank">Introduce to React Hooks</a></li>
+                </ul>
             </section>
             <a href="#home" class="subsite__back"></a>
         </section>
