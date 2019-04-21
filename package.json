@@ -6,6 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "http-server ./",
-    "build": "workbox injectManifest workbox-config.js"
+    "build": "workbox injectManifest workbox-config.js",
+    "deploy": "yarn build && yarn commit && git push",
+    "commit": "git commit -a -m \"Deploy Site: `date '+%Y-%m/%d %H:%M:%S'`\""
   }
 }

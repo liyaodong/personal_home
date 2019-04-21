@@ -84,7 +84,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "635c133092162ec0920e92a864dd3eb4"
+    "revision": "7607dffc55df0bb66ada075edc27f70a"
   },
   {
     "url": "src/css/app.css",

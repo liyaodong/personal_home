@@ -186,18 +186,20 @@
          position: relative;
      }
 
-     .site-screen--first::after {
-         content: "";
-         position: absolute;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
+     @media screen and (max-width: 719px) {
+         .site-screen--first::after {
+             content: "";
+             position: absolute;
+             top: 0;
+             right: 0;
+             bottom: 0;
+             left: 0;
 
-         background: url('./images/bg.jpg') center center no-repeat;
-         background-size: cover;
-         transform: translateZ(-1px) scale(1.56);
-         z-index: -1;
+             background: url('./images/bg.jpg') center center no-repeat;
+             background-size: cover;
+             transform: translateZ(-1px) scale(1.56);
+             z-index: -1;
+         }
      }
 
      .site-name {
@@ -261,6 +263,52 @@
          background-position: center center;
          transform: skewY(-3deg);
          z-index: -1;
+     }
+
+    @keyframes bgGradient {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 50%
+        }
+        100% {
+            background-position: 0% 50%
+        }
+    }
+
+     @media screen and (min-width: 720px) {
+         .site-home {
+             background-color: #fff;
+             background: linear-gradient(-45deg, hsla(0, 80%, 81%, 1), hsla(180, 80%, 81%, 1), hsla(360, 80%, 81%, 1));
+	         background-size: 400% 400%;
+             animation: bgGradient 15s ease infinite;
+         }
+
+         .subsite-list {
+             max-width: 960px;
+             flex-wrap: wrap;
+             flex-direction: row;
+             margin:  0 auto;
+             transform: none;
+             align-items: center;
+             justify-content: space-around;
+         }
+         .subsite-list__item {
+             width: 40%;
+             border-radius: 50px;
+             overflow: hidden;
+             transition: transform 300ms, filter 300ms;
+             filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, .5));
+         }
+         .subsite-list__item:hover {
+             transform: translateY(-10%);
+             filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, .5));
+
+         }
+         .subsite-list__item::after {
+             background-size: cover;
+         }
      }
 
      .subsite--blog .subsite__hero::after,
