@@ -63,6 +63,7 @@
             x.querySelectorAll('a').forEach(changeToHashUrl);
             $container.append(x);
         })
+        $container.insertAdjacentHTML('beforeend', `<a class="subsite--blog__more" href="https://blog.liyaodong.com/page/2/">More Blog</a>`);
     };
 
     const loadPost = path => {
