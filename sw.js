@@ -1,4 +1,4 @@
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.5.0/workbox-sw.js');
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
 
 if (workbox) {
   workbox.precaching.precacheAndRoute([
@@ -87,6 +87,10 @@ if (workbox) {
     "revision": "aa74d579ab76a604172691ea37e8e09a"
   },
   {
+    "url": "offline.html",
+    "revision": "2252fbec8c99cba368fce98bc8bdb521"
+  },
+  {
     "url": "src/css/app.css",
     "revision": "d41d8cd98f00b204e9800998ecf8427e"
   },
@@ -108,33 +112,42 @@ if (workbox) {
   }
 ]);
 
-  workbox.router.registerRoute(
+  workbox.routing.registerRoute(
     /(.*)cdn\.ampproject\.org(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
 
-  workbox.router.registerRoute(
+  workbox.routing.registerRoute(
     /(.*)platform\.twitter\.com(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
 
-  workbox.router.registerRoute(
+  workbox.routing.registerRoute(
     /(.*)blog\.liyaodong\.com(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
 
-  workbox.router.registerRoute(
+  workbox.routing.registerRoute(
     /(.*)pbs\.twimg\.com(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
 
-  workbox.router.registerRoute(
+  workbox.routing.registerRoute(
     /(.*)image\.liyaodong\.com(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
 
-  workbox.router.registerRoute(
+  workbox.routing.registerRoute(
     /(.*)cdn\.jsdelivr\.net(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
+
+  workbox.routing.registerRoute(/(.*)/, args => {
+    return articleHandler.handle(args).then(response => {
+      if (!response) {
+        return caches.match('/offline.html');
+      }
+      return response;
+    });
+  });
 }
