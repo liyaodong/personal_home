@@ -141,13 +141,4 @@ if (workbox) {
     /(.*)cdn\.jsdelivr\.net(.*)/,
     workbox.strategies.staleWhileRevalidate()
   );
-
-  workbox.routing.registerRoute(/(.*)/, args => {
-    return articleHandler.handle(args).then(response => {
-      if (!response) {
-        return caches.match('/offline.html');
-      }
-      return response;
-    });
-  });
 }
