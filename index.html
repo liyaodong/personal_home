@@ -5,8 +5,6 @@
         <title>Yaodong Li</title>
         <link rel="manifest" href="/manifest.webmanifest">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <script async src="https://cdn.ampproject.org/v0.js"></script>
-        <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>
         <script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.8/pwacompat.min.js"
                 integrity="sha384-uONtBTCBzHKF84F6XvyC8S0gL8HTkAPeCyBNvfLfsqHh+Kd6s/kaS4BdmNQ5ktp1"
                 crossorigin="anonymous"></script>
@@ -94,7 +92,6 @@
 
      .subsite__body {
          padding: 15px;
-         max-width: 700px;
          margin: 0 auto;
      }
 
@@ -137,30 +134,20 @@
          width: 80%;
      }
 
-     .subsite--blog .article-item a {
-         color: #000;
-         text-decoration: none;
+     .subsite--blog .subsite__body {
+        flex-grow: 1;
+        position: relative;
+        width: 100%;
+        margin: 0;
      }
 
-     .subsite--blog .article-item-title {
-         font-size: 20px;
-         margin: 0;
-     }
-
-     .subsite--blog .article-item-summary {
-         margin-top: 10px;
-     }
-
-     .subsite--blog .article-item-date,
-     .subsite--blog .article-item-summary a,
-     .subsite--blog .article-item-summary {
-         font-size: 14px;
-         color: #555;
-     }
-
-     .subsite--blog .article-item-summary p {
-         margin: 10px 0 0 0;
-     }
+    .blog-iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
 
      .subsite--blog__more {
          text-align: center;
@@ -170,10 +157,6 @@
          text-decoration: none;
          background-color: #000;
          margin-bottom: 15px;
-     }
-
-     .subsite--post:not(.is-loading) .subsite--post__placeholder {
-         display: none;
      }
 
      .wrapper {
@@ -326,51 +309,6 @@
          padding: 0 10px;
      }
 
-     .single {
-         line-height: 1.625;
-         color: #4a4a4a;
-         max-width: 700px;
-
-         amp-img {
-             margin: 15px auto;
-             text-align: center;
-         }
-
-         code {
-             color: $color-yellow;
-             font-size: 14px;
-             font-weight: bold;
-             margin: 5px;
-         }
-
-         pre > code {
-             font-weight: 600;
-             margin: 0;
-         }
-
-         div.highlight {
-             box-shadow: 0 3px 3px 1px #d2c7b5;
-         }
-
-         .chroma {
-             background-color: transparent;
-         }
-
-         a {
-             text-decoration: underline;
-             &:hover {
-                 color: #000;
-             }
-         }
-     }
-
-     .post-title {
-         text-align: center;
-         font-family: $titleFont;
-         font-size: 32px;
-         margin: 0 0 5px 0;
-     }
-
      .subsite--slides__link {
          color: #000;
          font-size: 20px;
@@ -382,7 +320,6 @@
      .subsite--slides__link:hover {
          background-color: #f1efe6;
      }
-
      /* desktop media querys */
      @media screen and (min-width: 720px) {
          .site-home {
@@ -469,11 +406,11 @@
         </section>
 
         <section class="subsite subsite--blog">
-            <section class="subsite__hero">
+            <!-- <section class="subsite__hero">
                 <h2 class="subsite__name">BLOG</h2>
-            </section>
+            </section> -->
             <section class="subsite__body">
-                <div class="subsite--blog__placeholder">
+                <!-- <div class="subsite--blog__placeholder">
                     <div class="subsite--blog__placeholder-title"></div>
                     <div class="subsite--blog__placeholder-desc-small"></div>
                     <div class="subsite--blog__placeholder-desc-large"></div>
@@ -487,7 +424,8 @@
                     <div class="subsite--blog__placeholder-title"></div>
                     <div class="subsite--blog__placeholder-desc-small"></div>
                     <div class="subsite--blog__placeholder-desc-large"></div>
-                </div>
+                </div> -->
+                <iframe class="blog-iframe" src="https://blog.liyaodong.com/shadow-doc.html" frameborder="0"></iframe>
             </section>
             <a href="#home" class="subsite__back"></a>
         </section>
@@ -506,7 +444,7 @@
                 <h2 class="subsite__name">photos</h2>
             </section>
             <section class="subsite__body wip">
-                <a class="twitter-timeline" href="https://twitter.com/xiaofengdong/timelines/1108022120133517313?ref_src=twsrc%5Etfw">Photos</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-src="https://platform.twitter.com/widgets.js" href="https://twitter.com/xiaofengdong/timelines/1108022120133517313?ref_src=twsrc%5Etfw">Photos</a>
             </section>
             <a href="#home" class="subsite__back"></a>
         </section>
@@ -525,21 +463,6 @@
                 </ul>
             </section>
             <a href="#home" class="subsite__back"></a>
-        </section>
-        <section class="subsite subsite--post">
-            <section class="subsite__body">
-                <div class="subsite--post__placeholder">
-                    <div class="subsite--blog__placeholder-title"></div>
-                    <div class="subsite--blog__placeholder-desc-small"></div>
-                    <div class="subsite--blog__placeholder-desc-large"></div>
-                    <div class="subsite--blog__placeholder-desc-large"></div>
-                    <div class="subsite--blog__placeholder-desc-large"></div>
-                    <div class="subsite--blog__placeholder-desc-large"></div>
-                </div>
-                <article class="subsite__article">
-                </article>
-            </section>
-            <a href="#blog" class="subsite__back"></a>
         </section>
         <script src="./src/js/app.js"></script>
 
