@@ -106,7 +106,7 @@ if (workbox) {
   },
   {
     "url": "workbox-config.js",
-    "revision": "d3ec773c007395ff9e6ae74acca436f9"
+    "revision": "1f3169827274787b2ca7d683356c4879"
   },
   {
     "url": "manifest.webmanifest",

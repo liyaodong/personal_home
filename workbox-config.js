@@ -8,5 +8,5 @@ module.exports = {
   "swSrc": "src/js/sw.js",
   "globIgnores": [
     "./workbox-config.js"
-  ]
+  ],
 };
