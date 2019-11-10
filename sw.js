@@ -133,7 +133,7 @@ if (workbox) {
     routeThatNeedCache.forEach(registStaleWhileRevalidate);
 
     self.addEventListener('message', (event) => {
-        if (event.data && event.data.type === 'SKIP_WAITING') {
+        if (event.data === 'skipWaiting') {
             self.skipWaiting();
         }
     });
