@@ -36,6 +36,9 @@
          display: none;
      }
 
+     .hide {
+         display: none;
+     }
 
      body:not([data-subsite="home"]) .site-home {
          display: none;
@@ -370,6 +373,30 @@
              margin-top: 30px;
          }
      }
+
+     .update-available {
+         position: fixed;
+         bottom: 20px;
+         right: 30px;
+         border-radius: 4px;
+         box-shadow: 0px 6px 8px rgba(0, 0, 0, .1);
+         background: #efffff;
+         font-size: 14px;
+         padding: 10px 20px;
+         cursor: pointer;
+     }
+
+     /* desktop media querys */
+     @media screen and (max-width: 500px) {
+         .update-available {
+             bottom: 0;
+             left: 50%;
+             transform: translateX(-50%);
+             width: 80%;
+             text-align: center;
+             border-radius: 4px 4px 0 0;
+         }
+     }
     </style>
     <body>
         <section class="wrapper site-home">
@@ -468,20 +495,66 @@
             </section>
             <a href="#home" class="subsite__back"></a>
         </section>
+
+        <div class="update-available hide js-update-serviceworker">
+            Update available, click here to update the APP
+        </div>
         <script src="./src/js/app.js"></script>
 
         <script>
-         if ('serviceWorker' in navigator) {
+         (() => {
+             const serviceWorkerAvailable = 'serviceWorker' in navigator;
+             if (!serviceWorkerAvailable) {
+                 return;
+             }
+
+             function listenAndUpdateServiceWorker(reg) {
+                function listenForWaitingServiceWorker(reg, callback) {
+                    function awaitStateChange() {
+                        reg.installing.addEventListener('statechange', function() {
+                            if (this.state === 'installed') callback(reg);
+                        });
+                    }
+                    if (!reg) return;
+                    if (reg.waiting) return callback(reg);
+                    if (reg.installing) awaitStateChange();
+                    reg.addEventListener('updatefound', awaitStateChange);
+                }
+
+                // reload once when the new Service Worker starts activating
+                var refreshing;
+                navigator.serviceWorker.addEventListener('controllerchange',
+                                                        function() {
+                                                            if (refreshing) return;
+                                                            refreshing = true;
+                                                            window.location.reload();
+                                                        }
+                );
+                function promptUserToRefresh(reg) {
+                    document.querySelector('.js-update-serviceworker').classList.remove('hide');
+                }
+
+                listenForWaitingServiceWorker(reg, promptUserToRefresh);
+
+                const updateServiceWorker = () => {
+                    reg.waiting.postMessage('skipWaiting');
+                };
+                document.querySelector('.js-update-serviceworker').addEventListener('click', updateServiceWorker);
+
+             }
+
              window.addEventListener('load', () => {
-                 navigator.serviceWorker.register('./sw.js')
-                          .then(registration => {
-                              console.log(`Service Worker registered! Scope: ${registration.scope}`);
-                          })
-                          .catch(err => {
-                              console.log(`Service Worker registration failed: ${err}`);
-                          });
+                navigator.serviceWorker.register('./sw.js')
+                        .then(registration => {
+                            listenAndUpdateServiceWorker(registration);
+                            console.log(`Service Worker registered! Scope: ${registration.scope}`);
+                        })
+                        .catch(err => {
+                            console.log(`Service Worker registration failed: ${err}`);
+                        });
+
              });
-         }
+         })();
         </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
