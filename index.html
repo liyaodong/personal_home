@@ -537,7 +537,7 @@
                 listenForWaitingServiceWorker(reg, promptUserToRefresh);
 
                 const updateServiceWorker = () => {
-                    reg.waiting && req.waiting.postMessage('skipWaiting');
+                    reg.waiting && reg.waiting.postMessage('skipWaiting');
                 };
                 document.querySelector('.js-update-serviceworker').addEventListener('click', updateServiceWorker);
              }
