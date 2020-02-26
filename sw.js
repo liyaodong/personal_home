@@ -14,7 +14,7 @@ if (workbox) {
   },
   {
     "url": "favicon.ico",
-    "revision": "d80a640a8b76b59614ee6b4705bd8497"
+    "revision": "6e2e0633a2f49d53a929b24ed0c9a52d"
   },
   {
     "url": "gitalk.html",
@@ -86,7 +86,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "f4958a4c4272ab63f80f4873233d9b1e"
+    "revision": "44925bdf28f034a09b8cf98b49aead09"
   },
   {
     "url": "offline.html",
