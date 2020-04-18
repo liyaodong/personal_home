@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yaodong Li - Resume</title>
         <meta name="description" content="I am Yaodong Li: a web developer, blogger who love to write down my stories and some thought about software development.">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
         <link href="./iconfont/iconfont.css" rel="stylesheet"/>
         <style>
          html, body {
              margin: 0;
              padding: 0;
-             font-family: 'PT Mono', monospace;
+             font: 400 16px/1.25 'Baloo Chettan 2',Helvetica\ Neue,Helvetica,Arial,sans-serif;
              box-sizing: border-box;
          }
          ul {
@@ -41,6 +41,13 @@
              background-color: #444;
              padding: 20px 30px;
          }
+         .resume-header__name {
+             display: flex;
+             align-items: center;
+         }
+         .resume-header__avatar {
+             margin-right: 10px;
+         }
          .resume-header__heading h1 {
              margin: 0 0 5px 0;
              font-size: 24px;
@@ -52,9 +59,8 @@
 
          .resume-social {
              display: flex;
-             justify-content: center;
-             align-items: center;
-             background-color: #6b6b6b;
+             flex-direction: column;
+             align-items: flex-start;
              font-size: 14px;
              padding: 5px 10px;
              flex-wrap: wrap;
@@ -64,7 +70,7 @@
          }
          .resume-social a {
              display: flex;
-             align-items: flex-start;
+             align-items: center;
              color: #fff;
          }
          .resume-social i {
@@ -102,7 +108,7 @@
              margin-bottom: 5px;
              display: flex;
              justify-content: space-between;
-             max-width: 300px;
+             max-width: 280px;
          }
 
          .resume-project-experience__item {
@@ -118,7 +124,12 @@
          @media screen and (max-width: 899px) {
              .resume-header {
                  text-align: center;
-                 flex-direction: column-reverse;
+                 flex-direction: column;
+             }
+
+             .resume-social {
+                 flex-direction: row;
+                 justify-content: center;
              }
 
              .resume-body {
@@ -151,56 +162,58 @@
     <body>
         <div class="resume">
             <div class="resume-header">
-                <div class="resume-header__heading">
-                    <h1>Yaodong Li</h1>
-                    <h2>Senior web developer</h2>
+                <div class="resume-header__name">
+                    <div class="resume-header__avatar">
+                        <img width="100" height="100" alt="Yaodong Li avatar" src="./images/avatar.png"/>
+                    </div>
+                    <div class="resume-header__heading">
+                        <h1>Yaodong Li</h1>
+                        <h2>Senior web developer</h2>
+                    </div>
                 </div>
-                <div class="resume-header__avatar">
-                    <img width="100" height="100" alt="Yaodong Li avatar" src="./images/avatar.png"/>
-                </div>
+                <ul class="resume-social">
+                    <li>
+                        <a href="https://liyaodong.com" target="_blank" rel="noopener">
+                            <i class="iconfont iconwww"></i>
+                            <span>
+                                liyaodong.com
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@liyaodong.com" target="_blank" rel="noopener">
+                            <i class="iconfont iconemail"></i>
+                            <span>
+                                mail@liyaodong.com
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/liyaodong" target="_blank" rel="noopener">
+                            <i class="iconfont icongithub"></i>
+                            <span>
+                                github.com/liyaodong
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yaodong-li-8223a385/" target="_blank" rel="noopener">
+                            <i class="iconfont iconLinkedinlogo"></i>
+                            <span>
+                                yaodong-li-8223a385
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/xiaofengdong" target="_blank" rel="noopener">
+                            <i class="iconfont icontwitter"></i>
+                            <span>
+                                xiaofengdong
+                            </span>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <ul class="resume-social">
-                <li>
-                    <a href="https://liyaodong.com" target="_blank" rel="noopener">
-                        <i class="iconfont iconwww"></i>
-                        <span>
-                            liyaodong.com
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:mail@liyaodong.com" target="_blank" rel="noopener">
-                        <i class="iconfont iconemail"></i>
-                        <span>
-                            mail@liyaodong.com
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/liyaodong" target="_blank" rel="noopener">
-                        <i class="iconfont icongithub"></i>
-                        <span>
-                            github.com/liyaodong
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/yaodong-li-8223a385/" target="_blank" rel="noopener">
-                        <i class="iconfont iconLinkedinlogo"></i>
-                        <span>
-                            yaodong-li-8223a385
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/xiaofengdong" target="_blank" rel="noopener">
-                        <i class="iconfont icontwitter"></i>
-                        <span>
-                            xiaofengdong
-                        </span>
-                    </a>
-                </li>
-            </ul>
             <div class="resume-body">
                 <div class="resume-body__side">
                     <div class="resume-body__section">
@@ -292,16 +305,20 @@
                                     </div>
                                     <p>
                                         I'm responsible to develop the UI of the news system, include news/user management system, user account system, order system and the check-in system. <br />
-                                        Technology: React/Redux/VueJS/Ruby on Rails/NodeJS/Gulp/Electron
+                                    </p>
+                                    <p>
+                                        <strong>Technology:</strong> React/Redux/VueJS/Ruby on Rails/NodeJS/Gulp/Electron
                                     </p>
                                 </div>
                                 <div class="resume-project-experience__item">
                                     <div class="resume-project-experience__item__heading">
-                                        News website about China's Innovation and company list, <a href="https://pandaily.com" target="_blank" rel="noopener">pandaily.com</a>
+                                        News website about China's Innovation and company database, <a href="https://pandaily.com" target="_blank" rel="noopener">pandaily.com</a>
                                     </div>
                                     <p>
-                                        As the only developer for this website, I'm responsible for UX design, Front-end and backend/DevOps. Except for the build and deployment step, I also working on SEO optimization and user behavior and data analytics. The project was build by <a href="https://amp.dev/" target="_blank">AMP</a> technology and has very good website performance across multiple availability zones.
-                                        Technology: AMP, VueJS, NodeJS, PHP, AWS, Docker, Google Analytics, Github Actions
+                                        As the only developer for this website, I'm responsible for UX design, Front-end and backend/DevOps. Except for the build and deployment step, I also working on SEO optimization and user behavior and data analytics. The project was build by <a href="https://amp.dev/" target="_blank">AMP</a> technology and has very good website performance across multiple availability zones.<br />
+                                    </p>
+                                    <p>
+                                        <strong>Technology:</strong> AMP, VueJS, NodeJS, PHP, AWS, Docker, Google Analytics, Github Actions
                                     </p>
                                 </div>
                                 <div class="resume-project-experience__item">
