@@ -21,6 +21,18 @@ if (workbox) {
     "revision": "9a04f2bc146073759f288ab72d65d4fb"
   },
   {
+    "url": "iconfont/iconfont.css",
+    "revision": "f9bdfbe6f303d62d8668e1c227bf0b96"
+  },
+  {
+    "url": "iconfont/iconfont.js",
+    "revision": "bcb6d9bba774648ec40682f28ccc4bd6"
+  },
+  {
+    "url": "iconfont/iconfont.svg",
+    "revision": "c673d299ecb28b9731e3d671d02bd6ad"
+  },
+  {
     "url": "images/avatar.png",
     "revision": "fdd9ee6e0813043accca50e0e64b2bd0"
   },
@@ -86,11 +98,15 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "44925bdf28f034a09b8cf98b49aead09"
+    "revision": "cffc67cf38f282c7a3ea890033350337"
   },
   {
     "url": "offline.html",
     "revision": "2252fbec8c99cba368fce98bc8bdb521"
+  },
+  {
+    "url": "resume.html",
+    "revision": "8634aebd41523a231182aa0da9047e0d"
   },
   {
     "url": "src/css/app.css",
