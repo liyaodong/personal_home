@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="${{ resume.lang }}$">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>${{ resume.title }}$</title>
+        <meta name="description" content="${{ resume.description }}$">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+        <link href="./iconfont/iconfont.css" rel="stylesheet"/>
+        <style>
+         html, body {
+             margin: 0;
+             padding: 0;
+             font: 400 16px/1.25 'Baloo Chettan 2',Helvetica\ Neue,Helvetica,Arial,sans-serif;
+             box-sizing: border-box;
+         }
+         ul {
+             padding: 0;
+             margin: 0;
+         }
+         li {
+             list-style-type: none;
+             margin: 0;
+         }
+         a {
+             text-decoration: none;
+         }
+
+
+         .resume {
+             width: 100%;
+             max-width: 900px;
+             margin: 0 auto;
+             background-color: #f3f3f3;
+         }
+         .resume-header {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+
+             color: #fff;
+             background-color: #444;
+             padding: 20px 30px;
+             border-radius: 0 0 20px 20px;
+         }
+         .resume-header__name {
+             display: flex;
+             align-items: center;
+         }
+         .resume-header__avatar {
+             margin-right: 10px;
+         }
+         .resume-header__heading h1 {
+             margin: 0 0 5px 0;
+             font-size: 24px;
+         }
+         .resume-header__heading h2 {
+             margin: 0;
+             font-size: 16px;
+         }
+
+         .resume-social {
+             display: flex;
+             flex-direction: column;
+             align-items: flex-start;
+             font-size: 14px;
+             padding: 5px 10px;
+             flex-wrap: wrap;
+         }
+         .resume-social li {
+             margin: 0 5px;
+         }
+         .resume-social a {
+             display: flex;
+             align-items: center;
+             color: #fff;
+         }
+         .resume-social i {
+             margin-right: 3px;
+         }
+
+         .resume-body {
+             padding: 20px 30px;
+             display: flex;
+         }
+         .resume-body__side {
+             width: 50%;
+             padding: 0 10px;
+         }
+         .resume-body__section {
+             margin-bottom: 20px;
+         }
+         .resume-body__section__heading {
+             margin: 10px 0 8px;
+             display: inline-block;
+             border-left: 3px solid #444;
+             padding-left: 10px;
+             font-size: 18px;
+         }
+         .resume-body__section__body {
+             font-size: 14px;
+         }
+
+         .resume-body__section h4 {
+             margin: 5px 0;
+         }
+
+         .resume-skills__list li {
+             margin-bottom: 5px;
+             display: flex;
+             justify-content: space-between;
+             max-width: 280px;
+         }
+
+         .resume-project-experience__item {
+             margin-bottom: 20px;
+         }
+
+         .resume-project-experience__item__heading {
+             background-color: #d8d8d8;
+             display: inline-block;
+             padding: 2px 4px;
+         }
+
+         @media screen and (max-width: 899px) {
+             .resume-header {
+                 text-align: center;
+                 flex-direction: column;
+             }
+
+             .resume-social {
+                 flex-direction: row;
+                 justify-content: center;
+             }
+
+             .resume-body {
+                 flex-wrap: wrap;
+                 padding: 10px 15px;
+             }
+
+             .resume-body__side {
+                 width: 100%;
+             }
+         }
+
+         @media print {
+             .resume-header {
+                 background-color: transparent;
+                 color: #000;
+             }
+
+             .resume-social a {
+                 color: #000;
+             }
+
+             .resume-project-experience__item__heading {
+                 text-decoration: underline;
+                 padding: 0;
+             }
+         }
+        </style>
+    </head>
+    <body>
+        <div class="resume">
+            <div class="resume-header">
+                <div class="resume-header__name">
+                    <div class="resume-header__avatar">
+                        <img width="100" height="100" alt="Yaodong Li avatar" src="./images/avatar.png"/>
+                    </div>
+                    <div class="resume-header__heading">
+                        <h1>${{ resume.name }}$</h1>
+                        <h2>${{ resume.job_title }}$</h2>
+                    </div>
+                </div>
+                <ul class="resume-social">
+                    <li>
+                        <a href="https://liyaodong.com" target="_blank" rel="noopener">
+                            <i class="iconfont iconwww"></i>
+                            <span>
+                                liyaodong.com
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/liyaodong" target="_blank" rel="noopener">
+                            <i class="iconfont icongithub"></i>
+                            <span>
+                                github.com/liyaodong
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@liyaodong.com" target="_blank" rel="noopener">
+                            <i class="iconfont iconemail"></i>
+                            <span>
+                                mail@liyaodong.com
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/yaodong-li-8223a385/" target="_blank" rel="noopener">
+                            <i class="iconfont iconLinkedinlogo"></i>
+                            <span>
+                                yaodong-li-8223a385
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/xiaofengdong" target="_blank" rel="noopener">
+                            <i class="iconfont icontwitter"></i>
+                            <span>
+                                xiaofengdong
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="resume-body">
+                <div class="resume-body__side">
+                    <div class="resume-body__section">
+                        <h3 class="resume-body__section__heading">
+                            ${{ resume.about.title }}$
+                        </h3>
+                        <div class="resume-body__section__body">
+                            <p>
+                                ${{ resume.about.content1 }}$
+                            </p>
+                            <p>
+                                ${{ resume.about.content2 }}$
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resume-body__section">
+                        <h3 class="resume-body__section__heading">
+                            ${{ resume.education.title }}$
+                        </h3>
+                        <div class="resume-body__section__body">
+                            <h4>${{ resume.education.school }}$</h4>
+                            <span>${{ resume.education.major }}$</span>
+                        </div>
+                    </div>
+                    <div class="resume-body__section">
+                        <h3 class="resume-body__section__heading">
+                            ${{ resume.skills.title }}$
+                        </h3>
+                        <div class="resume-body__section__body">
+                            <ul class="resume-skills__list">
+                                <li>
+                                    <span class="resume-skills__name">Javascript</span>
+                                    <span class="resume-skills__score">5</span>
+                                </li>
+                                <li>
+                                    <span class="resume-skills__name">HTML/CSS/PWA</span>
+                                    <span class="resume-skills__score">5</span>
+                                </li>
+                                <li>
+                                    <span class="resume-skills__name">React/Redux/VueJS</span>
+                                    <span class="resume-skills__score">5</span>
+                                </li>
+                                <li>
+                                    <span class="resume-skills__name">NodeJS/PHP/Ruby On Rails</span>
+                                    <span class="resume-skills__score">4</span>
+                                </li>
+                                <li>
+                                    <span class="resume-skills__name">AWS/Docker/DevOps/CI</span>
+                                    <span class="resume-skills__score">4</span>
+                                </li>
+                                <li>
+                                    <span class="resume-skills__name">Linux/Vim/Emacs/Git</span>
+                                    <span class="resume-skills__score">4</span>
+                                </li>
+                                <li>
+                                    <span class="resume-skills__name">UX/UI Design/Sketch/PhotoShop</span>
+                                    <span class="resume-skills__score">4</span>
+                                </li>
+                                <li>
+                                    <span class="resume-skills__name">${{ resume.skills.communication }}$/${{ resume.skills.problem_solving }}$</span>
+                                    <span class="resume-skills__score">4</span>
+                                </li>
+                                <li>
+                                    <span class="resume-skills__name">${{ resume.skills.leadership }}$/${{ resume.skills.mentoring }}$/${{ resume.skills.consulting }}$</span>
+                                    <span class="resume-skills__score">3</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-body__section">
+                        <h3 class="resume-body__section__heading">
+                            ${{ resume.language.title }}$
+                        </h3>
+                        <div class="resume-body__section__body">
+                            ${{ resume.language.detail }}$
+                        </div>
+                    </div>
+                    <div class="resume-body__section">
+                        <h3 class="resume-body__section__heading">
+                            ${{ resume.session.title }}$
+                        </h3>
+                        <ul class="resume-body__section__body">
+                            <li>${{ resume.session.css_engineering }}$ - UI Super Day, 2017</li>
+                            <li>Google I/O 2018 Redux - GDG Xi'an, 2018</li>
+                            <li>${{ resume.session.amp }}$ - freeCodeCamp, 2018</li>
+                            <li>${{ resume.session.fdconf }}$, 2019</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume-body__side">
+                    <div class="resume-body__section">
+                        <h3 class="resume-body__section__heading">
+                            ${{ resume.project.title }}$
+                        </h3>
+                        <div class="resume-body__section__body">
+                            <div class="resume-project-experience">
+                                <div class="resume-project-experience__item">
+                                    <div class="resume-project-experience__item__heading">
+                                        ${{ resume.project.booking.title }}$
+                                    </div>
+                                    <p>
+                                        ${{ resume.project.booking.content }}$
+                                    </p>
+                                </div>
+                                <div class="resume-project-experience__item">
+                                    <div class="resume-project-experience__item__heading">
+                                        ${{ resume.project.pandaily.title }}$, <a href="https://pandaily.com" target="_blank" rel="noopener">pandaily.com</a>
+                                    </div>
+                                    <p>
+                                        ${{ resume.project.pandaily.content }}$
+                                    </p>
+                                    <p>
+                                        <strong>${{ resume.project.technology }}$:</strong> AMP, VueJS, NodeJS, PHP, AWS, Docker, Google Analytics, Github Actions
+                                    </p>
+                                </div>
+                                <div class="resume-project-experience__item">
+                                    <div class="resume-project-experience__item__heading">
+                                        ${{ resume.project.geekpark.title }}$, 2015-2016, <a href="https://www.geekpark.net/" target="_blank" rel="opopener">geekpark.net</a>
+                                    </div>
+                                    <p>
+                                        ${{ resume.project.geekpark.content }}$
+                                    </p>
+                                    <p>
+                                        <strong>${{ resume.project.technology }}$:</strong> React/Redux/VueJS/Ruby on Rails/NodeJS/Gulp/Electron
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-body__section">
+                        <h3 class="resume-body__section__heading">
+                            ${{ resume.trainer.title }}$
+                        </h3>
+                        <ul class="resume-body__section__body">
+                            <li>${{ resume.trainer.tdd }}$</li>
+                            <li>${{ resume.trainer.tech_lead }}$</li>
+                            <li>${{ resume.trainer.micro }}$</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30027709-2"></script>
+        <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+
+         gtag('config', 'UA-30027709-2');
+        </script>
+    </body>
+</html>

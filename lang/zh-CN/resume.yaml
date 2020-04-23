@@ -1,0 +1,45 @@
+lang: zh
+title: 李耀东的简历
+description: 李耀东，前端开发，爱分享，爱写博客。
+name: 李耀东
+job_title: 高级前端开发工程师
+about:
+  title: 关于我
+  content1: Web 开发工程师，博主，热爱分享自己的故事以及关于软件开发的一切。
+  content2: 我的主要兴趣点是了解计算机以及信息技术如何改变我们生活的方式，目前我专注在前端开发。
+education:
+  title: 教育
+  school: 宝鸡文理学院
+  major: 地理科学, 2011-2015
+skills:
+  title: 技能
+  communication: 沟通
+  problem_solving: 解决问题
+  leadership: 领导力
+  mentoring: 带人
+  consulting: 咨询
+language:
+  title: 语言
+  detail: 中文/英文
+session:
+  title: 演讲
+  css_engineering: CSS 工程化实践
+  amp: 使用 AMP 构建高性能网站
+  fdconf: PWA + AMP 构建超快 Web APP - 中国前端开发者大会·上海
+project:
+  title: 项目经验
+  technology: 技术
+  booking:
+    title: Online booking system
+    content: The system is a large booking system in e-commerce field. I'm working as a Front-end tech lead in the project, mainly focus on refactoring the legacy system to Micro Front-end and react redux based SPA project. also, practice on website accessibility and performance optimization, contribute to i18n improvement and SCRUM based agile development. Work closely with the UX team to build a design system and shared component library. Build and practice training programs in Security/Front-end and Performance optimize area.
+  pandaily:
+    title: News website about China's Innovation and company database
+    content: As the only developer for this website, I'm responsible for UX design, Front-end and backend/DevOps. Except for the build and deployment step, I also working on SEO optimization and user behavior and data analytics. The project was build by <a href="https://amp.dev/" target="_blank">AMP</a> technology and has very good website performance across multiple availability zones.
+  geekpark:
+    title: Online news website
+    content: I'm responsible to develop the UI of the news system, include news/user management system, user account system, order system and the check-in system.
+trainer:
+  title: 培训讲师经历
+  tdd: 测试驱动开发，重构，结对编程
+  tech_lead: Tech Lead 培训
+  micro: 微前端培训

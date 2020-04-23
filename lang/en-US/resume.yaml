@@ -1,0 +1,45 @@
+lang: en
+title: Yaodong Li - Resume
+description: I am Yaodong Li: a web developer, blogger who love to write down my stories and some thought about software development.
+name: Yaodong Li
+job_title: Senior web developer
+about:
+  title: About Me
+  content1: A web developer, blogger who love to write down my stories and some thought about software development.
+  content2: My main interest is to learn and understand how computer/information technology can change the way we live. Currently, I'm focusing on the Front-end field.
+education:
+  title: Education
+  school: Baoji University of Arts and Sciences
+  major: Geography Science, 2011-2015
+skills:
+  title: Skills
+  communication: Communication
+  problem_solving: Problem solving
+  leadership: Leadership
+  mentoring: Mentoring
+  consulting: Consulting
+language:
+  title: Language
+  detail: Mandarin Chinese/English
+session:
+  title: Session Sharing
+  css_engineering: CSS engineering
+  amp: Build blazing fast website with AMP
+  fdconf: Build fast Web App by PWA and AMP - FDConf ShangHai
+project:
+  title: Project Experience
+  technology: Technology
+  booking:
+    title: Online booking system
+    content: The system is a large booking system in e-commerce field. I'm working as a Front-end tech lead in the project, mainly focus on refactoring the legacy system to Micro Front-end and react redux based SPA project. also, practice on website accessibility and performance optimization, contribute to i18n improvement and SCRUM based agile development. Work closely with the UX team to build a design system and shared component library. Build and practice training programs in Security/Front-end and Performance optimize area.
+  pandaily:
+    title: News website about China's Innovation and company database
+    content: As the only developer for this website, I'm responsible for UX design, Front-end and backend/DevOps. Except for the build and deployment step, I also working on SEO optimization and user behavior and data analytics. The project was build by <a href="https://amp.dev/" target="_blank">AMP</a> technology and has very good website performance across multiple availability zones.
+  geekpark:
+    title: Online news website
+    content: I'm responsible to develop the UI of the news system, include news/user management system, user account system, order system and the check-in system.
+trainer:
+  title: Trainer Experience
+  tdd: TDD, Refactoring and Pair programming
+  tech_lead: Tech Lead training
+  micro: Micro Front-end training

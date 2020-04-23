@@ -6,8 +6,13 @@
   "license": "MIT",
   "scripts": {
     "start": "http-server ./",
+    "lang": "gulp",
     "build": "workbox injectManifest workbox-config.js",
     "deploy": "yarn build && yarn commit && git push",
     "commit": "git commit -a -m \"Deploy Site: `date '+%Y-%m/%d %H:%M:%S'`\""
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-html-i18n": "^0.16.0"
   }
 }
