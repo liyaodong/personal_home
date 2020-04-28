@@ -106,7 +106,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "d81299059842b7632232d94b9f58d295"
+    "revision": "d230f014e2cbe4fb97fa6cb761b0e24b"
   },
   {
     "url": "node_modules/ansi-colors/index.js",
