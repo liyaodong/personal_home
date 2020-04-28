@@ -106,7 +106,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "2304e48325ed4b428d2aa6f0249429b8"
+    "revision": "d81299059842b7632232d94b9f58d295"
   },
   {
     "url": "node_modules/ansi-colors/index.js",
@@ -14782,11 +14782,11 @@ if (workbox) {
   },
   {
     "url": "reading/frontend-craft-skills.html",
-    "revision": "84b525a1c3d5e68e5310d70ccbff9643"
+    "revision": "047d959a4f937a88c1a57ebdc72093bc"
   },
   {
     "url": "reading/web-performance.html",
-    "revision": "42f6808ea9f00650414b0baf31767469"
+    "revision": "5fb9b7f1e94a1d58fb37a6d4c53c9e7b"
   },
   {
     "url": "resume-zh-CN.html",
@@ -14802,7 +14802,7 @@ if (workbox) {
   },
   {
     "url": "src/js/app.js",
-    "revision": "61b9f3c68f54084b7198671f4276fe3b"
+    "revision": "b0379653b43ca411648ba87885e87098"
   },
   {
     "url": "src/js/dji.js",
