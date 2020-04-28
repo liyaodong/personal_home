@@ -14782,7 +14782,7 @@ if (workbox) {
   },
   {
     "url": "reading/frontend-craft-skills.html",
-    "revision": "047d959a4f937a88c1a57ebdc72093bc"
+    "revision": "ed5b89e157443383563e6b482345f526"
   },
   {
     "url": "reading/web-performance.html",
