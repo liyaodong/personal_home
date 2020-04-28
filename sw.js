@@ -14785,6 +14785,18 @@ if (workbox) {
     "revision": "ed5b89e157443383563e6b482345f526"
   },
   {
+    "url": "reading/microfrontend.html",
+    "revision": "9728da79ebb486c06418cbc6094b02ca"
+  },
+  {
+    "url": "reading/microservice.html",
+    "revision": "850d9ba673b598a13ee5b6b2ddca5ddd"
+  },
+  {
+    "url": "reading/w3c-standard.html",
+    "revision": "2baa78df85d02ef28d41c4feeace4b9e"
+  },
+  {
     "url": "reading/web-performance.html",
     "revision": "5fb9b7f1e94a1d58fb37a6d4c53c9e7b"
   },
