@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-04-28 Tue 14:59 -->
+<!-- 2020-04-28 Tue 15:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Web Performance Checklist</title>
+<title>Web Performance Checklist 2020</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Yaodong Li" />
 <style type="text/css">
@@ -243,10 +243,10 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Web Performance Checklist</h1>
+<h1 class="title">Web Performance Checklist 2020</h1>
 
-<div id="outline-container-org0543e32" class="outline-2">
-<h2 id="org0543e32"><span class="section-number-2">1</span> Basic Info</h2>
+<div id="outline-container-org2806a70" class="outline-2">
+<h2 id="org2806a70"><span class="section-number-2">1</span> Basic Info</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 All the content is from this article
@@ -254,23 +254,23 @@ All the content is from this article
 </p>
 </div>
 </div>
-<div id="outline-container-orge951d63" class="outline-2">
-<h2 id="orge951d63"><span class="section-number-2">2</span> Performance Culture matters</h2>
+<div id="outline-container-org135dad3" class="outline-2">
+<h2 id="org135dad3"><span class="section-number-2">2</span> Performance Culture matters</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Continuously monitor on the performance stuff
 </p>
 </div>
 </div>
-<div id="outline-container-org9601c91" class="outline-2">
-<h2 id="org9601c91"><span class="section-number-2">3</span> at lest 20% faster than your fastest competitor</h2>
+<div id="outline-container-org1e86733" class="outline-2">
+<h2 id="org1e86733"><span class="section-number-2">3</span> at lest 20% faster than your fastest competitor</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org50d608d" class="outline-3">
-<h3 id="org50d608d"><span class="section-number-3">3.1</span> Performance Budget matters</h3>
+<div id="outline-container-org9364b76" class="outline-3">
+<h3 id="org9364b76"><span class="section-number-3">3.1</span> Performance Budget matters</h3>
 </div>
-<div id="outline-container-org998d5a6" class="outline-3">
-<h3 id="org998d5a6"><span class="section-number-3">3.2</span> Integrate with CI</h3>
+<div id="outline-container-orgf4fd80c" class="outline-3">
+<h3 id="orgf4fd80c"><span class="section-number-3">3.2</span> Integrate with CI</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 Once you have a budget in place, incorporate them into your build process with Webpack Performance Hints and Bundlesize, Lighthouse CI, PWMetrics or Sitespeed CI to enforce budgets on pull requests and provide a score history in PR comments.
@@ -278,8 +278,8 @@ Once you have a budget in place, incorporate them into your build process with W
 </div>
 </div>
 </div>
-<div id="outline-container-org766debc" class="outline-2">
-<h2 id="org766debc"><span class="section-number-2">4</span> Choose the right metrics</h2>
+<div id="outline-container-org04e5531" class="outline-2">
+<h2 id="org04e5531"><span class="section-number-2">4</span> Choose the right metrics</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 Quantity-based metrics measure the number of requests, weight and a performance score. Good for raising alarms and monitoring changes over time, not so good for understanding user experience.
@@ -297,12 +297,12 @@ Rendering metrics provide an estimate of how fast content renders (e.g. Start Re
 Custom metrics measure a particular, custom event for the user, e.g. Twitter’s Time To First Tweet and Pinterest’s PinnerWaitTime. Good for describing the user experience precisely, not so good for scaling the metrics and comparing with with competitors.
 </p>
 </div>
-<div id="outline-container-org74effb0" class="outline-3">
-<h3 id="org74effb0"><span class="section-number-3">4.1</span> Mertics</h3>
+<div id="outline-container-org48dfd69" class="outline-3">
+<h3 id="org48dfd69"><span class="section-number-3">4.1</span> Mertics</h3>
 <div class="outline-text-3" id="text-4-1">
 </div>
-<div id="outline-container-orgcbc13a5" class="outline-4">
-<h4 id="orgcbc13a5"><span class="section-number-4">4.1.1</span> Time to interactive(TTI)</h4>
+<div id="outline-container-org0488c46" class="outline-4">
+<h4 id="org0488c46"><span class="section-number-4">4.1.1</span> Time to interactive(TTI)</h4>
 <div class="outline-text-4" id="text-4-1-1">
 <p>
 Should be same as First CPU Idle
@@ -310,71 +310,71 @@ Should be same as First CPU Idle
 </p>
 </div>
 </div>
-<div id="outline-container-org5ed75b2" class="outline-4">
-<h4 id="org5ed75b2"><span class="section-number-4">4.1.2</span> First input delay(FID, RUM only)</h4>
+<div id="outline-container-org827a717" class="outline-4">
+<h4 id="org827a717"><span class="section-number-4">4.1.2</span> First input delay(FID, RUM only)</h4>
 <div class="outline-text-4" id="text-4-1-2">
 <p>
 What if a user actually focus on input try to input something
 </p>
 </div>
 </div>
-<div id="outline-container-org57f1e01" class="outline-4">
-<h4 id="org57f1e01"><span class="section-number-4">4.1.3</span> Largest Contentful Pain(LCP)</h4>
+<div id="outline-container-org6726828" class="outline-4">
+<h4 id="org6726828"><span class="section-number-4">4.1.3</span> Largest Contentful Pain(LCP)</h4>
 <div class="outline-text-4" id="text-4-1-3">
 <p>
 Larges visable part loaded
 </p>
 </div>
 </div>
-<div id="outline-container-org24050ec" class="outline-4">
-<h4 id="org24050ec"><span class="section-number-4">4.1.4</span> Total Blocking Time(TBT)</h4>
+<div id="outline-container-org473a6e9" class="outline-4">
+<h4 id="org473a6e9"><span class="section-number-4">4.1.4</span> Total Blocking Time(TBT)</h4>
 <div class="outline-text-4" id="text-4-1-4">
 <p>
 First Pain to Time to Interactive
 </p>
 </div>
 </div>
-<div id="outline-container-org49ad6c4" class="outline-4">
-<h4 id="org49ad6c4"><span class="section-number-4">4.1.5</span> Cumulative Layout Shirt(CLS)</h4>
+<div id="outline-container-org56794b2" class="outline-4">
+<h4 id="org56794b2"><span class="section-number-4">4.1.5</span> Cumulative Layout Shirt(CLS)</h4>
 <div class="outline-text-4" id="text-4-1-5">
 <p>
 Reflow
 </p>
 </div>
 </div>
-<div id="outline-container-orgf22dd7b" class="outline-4">
-<h4 id="orgf22dd7b"><span class="section-number-4">4.1.6</span> Speed Index</h4>
+<div id="outline-container-org950679f" class="outline-4">
+<h4 id="org950679f"><span class="section-number-4">4.1.6</span> Speed Index</h4>
 </div>
-<div id="outline-container-org43f9e16" class="outline-4">
-<h4 id="org43f9e16"><span class="section-number-4">4.1.7</span> CPU time Spend</h4>
+<div id="outline-container-org66bd7c0" class="outline-4">
+<h4 id="org66bd7c0"><span class="section-number-4">4.1.7</span> CPU time Spend</h4>
 </div>
-<div id="outline-container-orgec79326" class="outline-4">
-<h4 id="orgec79326"><span class="section-number-4">4.1.8</span> First Meaningful paint(FMP, deprecated)</h4>
+<div id="outline-container-org11bd21b" class="outline-4">
+<h4 id="org11bd21b"><span class="section-number-4">4.1.8</span> First Meaningful paint(FMP, deprecated)</h4>
 </div>
 </div>
 </div>
-<div id="outline-container-org40cbbe4" class="outline-2">
-<h2 id="org40cbbe4"><span class="section-number-2">5</span> Setting Realistic Goals</h2>
+<div id="outline-container-org0966335" class="outline-2">
+<h2 id="org0966335"><span class="section-number-2">5</span> Setting Realistic Goals</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org72ccdfc" class="outline-3">
-<h3 id="org72ccdfc"><span class="section-number-3">5.1</span> 100-millisecond response time, 60 fps</h3>
+<div id="outline-container-orgc30a28e" class="outline-3">
+<h3 id="orgc30a28e"><span class="section-number-3">5.1</span> 100-millisecond response time, 60 fps</h3>
 </div>
-<div id="outline-container-orgdca619b" class="outline-3">
-<h3 id="orgdca619b"><span class="section-number-3">5.2</span> FID &lt; 100ms</h3>
+<div id="outline-container-orgd3c2250" class="outline-3">
+<h3 id="orgd3c2250"><span class="section-number-3">5.2</span> FID &lt; 100ms</h3>
 </div>
-<div id="outline-container-org5827017" class="outline-3">
-<h3 id="org5827017"><span class="section-number-3">5.3</span> TTI &lt; 5s on 3G</h3>
+<div id="outline-container-orgb701a28" class="outline-3">
+<h3 id="orgb701a28"><span class="section-number-3">5.3</span> TTI &lt; 5s on 3G</h3>
 </div>
-<div id="outline-container-org1c2a273" class="outline-3">
-<h3 id="org1c2a273"><span class="section-number-3">5.4</span> Speed Index &lt; 3s</h3>
+<div id="outline-container-orgc2eae6b" class="outline-3">
+<h3 id="orgc2eae6b"><span class="section-number-3">5.4</span> Speed Index &lt; 3s</h3>
 </div>
-<div id="outline-container-org9f8a080" class="outline-3">
-<h3 id="org9f8a080"><span class="section-number-3">5.5</span> Critical file size budget &lt; 170KB(gzipd)</h3>
+<div id="outline-container-orge529a95" class="outline-3">
+<h3 id="orge529a95"><span class="section-number-3">5.5</span> Critical file size budget &lt; 170KB(gzipd)</h3>
 </div>
 </div>
-<div id="outline-container-org937770e" class="outline-2">
-<h2 id="org937770e"><span class="section-number-2">6</span> Server side rendering</h2>
+<div id="outline-container-orgce82428" class="outline-2">
+<h2 id="orgce82428"><span class="section-number-2">6</span> Server side rendering</h2>
 <div class="outline-text-2" id="text-6">
 
 <div class="figure">
@@ -383,111 +383,111 @@ Reflow
 </div>
 </div>
 </div>
-<div id="outline-container-org8615c4d" class="outline-2">
-<h2 id="org8615c4d"><span class="section-number-2">7</span> Tools</h2>
+<div id="outline-container-org65b4a71" class="outline-2">
+<h2 id="org65b4a71"><span class="section-number-2">7</span> Tools</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-org1aef42c" class="outline-3">
-<h3 id="org1aef42c"><span class="section-number-3">7.1</span> Chrome UX report</h3>
+<div id="outline-container-orge7abbf9" class="outline-3">
+<h3 id="orge7abbf9"><span class="section-number-3">7.1</span> Chrome UX report</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
 <a href="https://web.dev/fast/chrome-ux-report">https://web.dev/fast/chrome-ux-report</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org9dff1bf" class="outline-3">
-<h3 id="org9dff1bf"><span class="section-number-3">7.2</span> Treo Sites</h3>
+<div id="outline-container-orge655e82" class="outline-3">
+<h3 id="orge655e82"><span class="section-number-3">7.2</span> Treo Sites</h3>
 <div class="outline-text-3" id="text-7-2">
 <p>
 <a href="https://treo.sh/sites">https://treo.sh/sites</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org599593f" class="outline-3">
-<h3 id="org599593f"><span class="section-number-3">7.3</span> Speed Scorecard</h3>
+<div id="outline-container-org7942bae" class="outline-3">
+<h3 id="org7942bae"><span class="section-number-3">7.3</span> Speed Scorecard</h3>
 <div class="outline-text-3" id="text-7-3">
 <p>
 <a href="https://www.thinkwithgoogle.com/feature/mobile/">https://www.thinkwithgoogle.com/feature/mobile/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc3b98fe" class="outline-3">
-<h3 id="orgc3b98fe"><span class="section-number-3">7.4</span> <a href="https://ruxt.dexecure.com/compare">https://ruxt.dexecure.com/compare</a></h3>
+<div id="outline-container-orgb957ad0" class="outline-3">
+<h3 id="orgb957ad0"><span class="section-number-3">7.4</span> <a href="https://ruxt.dexecure.com/compare">https://ruxt.dexecure.com/compare</a></h3>
 </div>
-<div id="outline-container-orgad857cd" class="outline-3">
-<h3 id="orgad857cd"><span class="section-number-3">7.5</span> SiteSpeed CI</h3>
+<div id="outline-container-org30be33f" class="outline-3">
+<h3 id="org30be33f"><span class="section-number-3">7.5</span> SiteSpeed CI</h3>
 <div class="outline-text-3" id="text-7-5">
 <p>
 <a href="https://www.sitespeed.io/">https://www.sitespeed.io/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orge19a854" class="outline-3">
-<h3 id="orge19a854"><span class="section-number-3">7.6</span> UX Speed Calculator</h3>
+<div id="outline-container-org28e8090" class="outline-3">
+<h3 id="org28e8090"><span class="section-number-3">7.6</span> UX Speed Calculator</h3>
 <div class="outline-text-3" id="text-7-6">
 <p>
 <a href="https://ux-speed-calculator.netlify.com/">https://ux-speed-calculator.netlify.com/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org7acfb8f" class="outline-3">
-<h3 id="org7acfb8f"><span class="section-number-3">7.7</span> Performance Buget calculator</h3>
+<div id="outline-container-org40dd798" class="outline-3">
+<h3 id="org40dd798"><span class="section-number-3">7.7</span> Performance Buget calculator</h3>
 <div class="outline-text-3" id="text-7-7">
 <p>
 <a href="http://www.performancebudget.io/">http://www.performancebudget.io/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org9b4e3b5" class="outline-3">
-<h3 id="org9b4e3b5"><span class="section-number-3">7.8</span> Perf tools</h3>
+<div id="outline-container-org67004df" class="outline-3">
+<h3 id="org67004df"><span class="section-number-3">7.8</span> Perf tools</h3>
 <div class="outline-text-3" id="text-7-8">
 <p>
 <a href="http://perf.rocks/tools/">http://perf.rocks/tools/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc2df1f9" class="outline-3">
-<h3 id="orgc2df1f9"><span class="section-number-3">7.9</span> Responsive Image Breakpoints Generator</h3>
+<div id="outline-container-org63e1ebf" class="outline-3">
+<h3 id="org63e1ebf"><span class="section-number-3">7.9</span> Responsive Image Breakpoints Generator</h3>
 <div class="outline-text-3" id="text-7-9">
 <p>
 <a href="http://www.responsivebreakpoints.com/">http://www.responsivebreakpoints.com/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org886f6ee" class="outline-3">
-<h3 id="org886f6ee"><span class="section-number-3">7.10</span> Check the system font display</h3>
+<div id="outline-container-org20097fb" class="outline-3">
+<h3 id="org20097fb"><span class="section-number-3">7.10</span> Check the system font display</h3>
 <div class="outline-text-3" id="text-7-10">
 <p>
 <a href="http://fontfamily.io/Roboto,Segoe_UI,TImes,Helvetica,sans-serif">http://fontfamily.io/Roboto,Segoe_UI,TImes,Helvetica,sans-serif</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org5696a8d" class="outline-3">
-<h3 id="org5696a8d"><span class="section-number-3">7.11</span> Github image optimize tool by Mozlia</h3>
+<div id="outline-container-orgdbca992" class="outline-3">
+<h3 id="orgdbca992"><span class="section-number-3">7.11</span> Github image optimize tool by Mozlia</h3>
 <div class="outline-text-3" id="text-7-11">
 <p>
 <a href="https://github.com/mozilla/mozjpeg">https://github.com/mozilla/mozjpeg</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org9b43ee2" class="outline-3">
-<h3 id="org9b43ee2"><span class="section-number-3">7.12</span> Webpack plugin for link preload/prefetch</h3>
+<div id="outline-container-orga800917" class="outline-3">
+<h3 id="orga800917"><span class="section-number-3">7.12</span> Webpack plugin for link preload/prefetch</h3>
 <div class="outline-text-3" id="text-7-12">
 <p>
 <a href="https://github.com/GoogleChromeLabs/preload-webpack-plugin">https://github.com/GoogleChromeLabs/preload-webpack-plugin</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgd0342e6" class="outline-3">
-<h3 id="orgd0342e6"><span class="section-number-3">7.13</span> Optimize a JavaScript file for faster initial execution and parsing</h3>
+<div id="outline-container-org1af7bc5" class="outline-3">
+<h3 id="org1af7bc5"><span class="section-number-3">7.13</span> Optimize a JavaScript file for faster initial execution and parsing</h3>
 <div class="outline-text-3" id="text-7-13">
 <p>
 <a href="https://github.com/nolanlawson/optimize-js">https://github.com/nolanlawson/optimize-js</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgd46859d" class="outline-3">
-<h3 id="orgd46859d"><span class="section-number-3">7.14</span> Size limit, limit JS bundle size</h3>
+<div id="outline-container-org1b13276" class="outline-3">
+<h3 id="org1b13276"><span class="section-number-3">7.14</span> Size limit, limit JS bundle size</h3>
 <div class="outline-text-3" id="text-7-14">
 <p>
 <a href="https://github.com/ai/size-limit">https://github.com/ai/size-limit</a>
@@ -496,252 +496,252 @@ Reflow
 </div>
 </div>
 
-<div id="outline-container-orgc03a2d8" class="outline-2">
-<h2 id="orgc03a2d8"><span class="section-number-2">8</span> Futher Reading</h2>
+<div id="outline-container-org7549173" class="outline-2">
+<h2 id="org7549173"><span class="section-number-2">8</span> Futher Reading</h2>
 <div class="outline-text-2" id="text-8">
 </div>
-<div id="outline-container-org3c500ce" class="outline-3">
-<h3 id="org3c500ce"><span class="section-number-3">8.1</span> How pinterest build PWA</h3>
+<div id="outline-container-orgac9f338" class="outline-3">
+<h3 id="orgac9f338"><span class="section-number-3">8.1</span> How pinterest build PWA</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 <a href="https://medium.com/pinterest-engineering/a-one-year-pwa-retrospective-f4a2f4129e05#d6bc">https://medium.com/pinterest-engineering/a-one-year-pwa-retrospective-f4a2f4129e05#d6bc</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org0baf9b6" class="outline-3">
-<h3 id="org0baf9b6"><span class="section-number-3">8.2</span> A Pinterest Progressive Web App Performance Case Study</h3>
+<div id="outline-container-org491a2fd" class="outline-3">
+<h3 id="org491a2fd"><span class="section-number-3">8.2</span> A Pinterest Progressive Web App Performance Case Study</h3>
 <div class="outline-text-3" id="text-8-2">
 <p>
 <a href="https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154">https://medium.com/dev-channel/a-pinterest-progressive-web-app-performance-case-study-3bd6ed2e6154</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org73d1fbb" class="outline-3">
-<h3 id="org73d1fbb"><span class="section-number-3">8.3</span> Progressive Web Metrics presentation</h3>
+<div id="outline-container-org2d33578" class="outline-3">
+<h3 id="org2d33578"><span class="section-number-3">8.3</span> Progressive Web Metrics presentation</h3>
 <div class="outline-text-3" id="text-8-3">
 <p>
 <a href="https://docs.google.com/presentation/d/1D4foHkE0VQdhcA5_hiesl8JhEGeTDRrQR4gipfJ8z7Y/edit#slide=id.g1d1bfb0329_0_280">https://docs.google.com/presentation/d/1D4foHkE0VQdhcA5_hiesl8JhEGeTDRrQR4gipfJ8z7Y/edit#slide=id.g1d1bfb0329_0_280</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org4e07175" class="outline-3">
-<h3 id="org4e07175"><span class="section-number-3">8.4</span> Evaluating rendering metrics</h3>
+<div id="outline-container-org23c53fc" class="outline-3">
+<h3 id="org23c53fc"><span class="section-number-3">8.4</span> Evaluating rendering metrics</h3>
 <div class="outline-text-3" id="text-8-4">
 <p>
 <a href="https://speedcurve.com/blog/rendering-metrics/">https://speedcurve.com/blog/rendering-metrics/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org3455433" class="outline-3">
-<h3 id="org3455433"><span class="section-number-3">8.5</span> 120fps website</h3>
+<div id="outline-container-org28f7b72" class="outline-3">
+<h3 id="org28f7b72"><span class="section-number-3">8.5</span> 120fps website</h3>
 <div class="outline-text-3" id="text-8-5">
 <p>
 <a href="https://dassur.ma/things/120fps/">https://dassur.ma/things/120fps/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org175b325" class="outline-3">
-<h3 id="org175b325"><span class="section-number-3">8.6</span> Browser Rendering Optimization</h3>
+<div id="outline-container-org2e99658" class="outline-3">
+<h3 id="org2e99658"><span class="section-number-3">8.6</span> Browser Rendering Optimization</h3>
 <div class="outline-text-3" id="text-8-6">
 <p>
 <a href="https://www.udacity.com/course/browser-rendering-optimization--ud860">https://www.udacity.com/course/browser-rendering-optimization--ud860</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org56c59c9" class="outline-3">
-<h3 id="org56c59c9"><span class="section-number-3">8.7</span> TCP BBR</h3>
+<div id="outline-container-orgf7e4a57" class="outline-3">
+<h3 id="orgf7e4a57"><span class="section-number-3">8.7</span> TCP BBR</h3>
 <div class="outline-text-3" id="text-8-7">
 <p>
 <a href="https://cloud.google.com/blog/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster">https://cloud.google.com/blog/products/gcp/tcp-bbr-congestion-control-comes-to-gcp-your-internet-just-got-faster</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org477ae29" class="outline-3">
-<h3 id="org477ae29"><span class="section-number-3">8.8</span> Netflix and react</h3>
+<div id="outline-container-org61973ba" class="outline-3">
+<h3 id="org61973ba"><span class="section-number-3">8.8</span> Netflix and react</h3>
 <div class="outline-text-3" id="text-8-8">
 <p>
 <a href="https://jakearchibald.com/2017/netflix-and-react/">https://jakearchibald.com/2017/netflix-and-react/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orga6a9afb" class="outline-3">
-<h3 id="orga6a9afb"><span class="section-number-3">8.9</span> Chrome User Experience Report</h3>
+<div id="outline-container-org9203ca8" class="outline-3">
+<h3 id="org9203ca8"><span class="section-number-3">8.9</span> Chrome User Experience Report</h3>
 <div class="outline-text-3" id="text-8-9">
 <p>
 <a href="https://drive.google.com/file/d/1CoCQP7qyvkSQ4VG9L_PTWD5AF9wF28XT/view">https://drive.google.com/file/d/1CoCQP7qyvkSQ4VG9L_PTWD5AF9wF28XT/view</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org64852c0" class="outline-3">
-<h3 id="org64852c0"><span class="section-number-3">8.10</span> Web.dev on optimize by react and angular</h3>
+<div id="outline-container-orgddaf347" class="outline-3">
+<h3 id="orgddaf347"><span class="section-number-3">8.10</span> Web.dev on optimize by react and angular</h3>
 <div class="outline-text-3" id="text-8-10">
 <p>
 <a href="https://web.dev/learn/#frameworks">https://web.dev/learn/#frameworks</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org337e3ff" class="outline-3">
-<h3 id="org337e3ff"><span class="section-number-3">8.11</span> PRPL pattern</h3>
+<div id="outline-container-org1996a69" class="outline-3">
+<h3 id="org1996a69"><span class="section-number-3">8.11</span> PRPL pattern</h3>
 <div class="outline-text-3" id="text-8-11">
 <p>
 <a href="https://web.dev/apply-instant-loading-with-prpl/">https://web.dev/apply-instant-loading-with-prpl/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org7ff92c4" class="outline-3">
-<h3 id="org7ff92c4"><span class="section-number-3">8.12</span> App Shell Architecture</h3>
+<div id="outline-container-org3f106b1" class="outline-3">
+<h3 id="org3f106b1"><span class="section-number-3">8.12</span> App Shell Architecture</h3>
 <div class="outline-text-3" id="text-8-12">
 <p>
 <a href="https://developers.google.com/web/updates/2015/11/app-shell">https://developers.google.com/web/updates/2015/11/app-shell</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org8cb8029" class="outline-3">
-<h3 id="org8cb8029"><span class="section-number-3">8.13</span> How to Design better javascript API</h3>
+<div id="outline-container-org47a5e02" class="outline-3">
+<h3 id="org47a5e02"><span class="section-number-3">8.13</span> How to Design better javascript API</h3>
 <div class="outline-text-3" id="text-8-13">
 <p>
 <a href="https://www.smashingmagazine.com/2012/10/designing-javascript-apis-usability/">https://www.smashingmagazine.com/2012/10/designing-javascript-apis-usability/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org5522af0" class="outline-3">
-<h3 id="org5522af0"><span class="section-number-3">8.14</span> Understanding And Using REST APIs</h3>
+<div id="outline-container-org9ab8e8c" class="outline-3">
+<h3 id="org9ab8e8c"><span class="section-number-3">8.14</span> Understanding And Using REST APIs</h3>
 <div class="outline-text-3" id="text-8-14">
 <p>
 <a href="https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/">https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org74296fa" class="outline-3">
-<h3 id="org74296fa"><span class="section-number-3">8.15</span> How graphql replace redux</h3>
+<div id="outline-container-org1794a6e" class="outline-3">
+<h3 id="org1794a6e"><span class="section-number-3">8.15</span> How graphql replace redux</h3>
 <div class="outline-text-3" id="text-8-15">
 <p>
 <a href="https://medium.com/@wmdmark/how-graphql-replaces-redux-3fff8289221d">https://medium.com/@wmdmark/how-graphql-replaces-redux-3fff8289221d</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org8473a7e" class="outline-3">
-<h3 id="org8473a7e"><span class="section-number-3">8.16</span> A GraphQL primer</h3>
+<div id="outline-container-org7fcc74b" class="outline-3">
+<h3 id="org7fcc74b"><span class="section-number-3">8.16</span> A GraphQL primer</h3>
 <div class="outline-text-3" id="text-8-16">
 <p>
 <a href="https://www.smashingmagazine.com/2018/01/graphql-primer-new-api-part-1/">https://www.smashingmagazine.com/2018/01/graphql-primer-new-api-part-1/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org3eea7fa" class="outline-3">
-<h3 id="org3eea7fa"><span class="section-number-3">8.17</span> How fast is AMP really</h3>
+<div id="outline-container-org56a810a" class="outline-3">
+<h3 id="org56a810a"><span class="section-number-3">8.17</span> How fast is AMP really</h3>
 <div class="outline-text-3" id="text-8-17">
 <p>
 <a href="https://timkadlec.com/remembers/2018-03-19-how-fast-is-amp-really/">https://timkadlec.com/remembers/2018-03-19-how-fast-is-amp-really/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orge984a96" class="outline-3">
-<h3 id="orge984a96"><span class="section-number-3">8.18</span> Progressive Web AMPs</h3>
+<div id="outline-container-orgdffee7a" class="outline-3">
+<h3 id="orgdffee7a"><span class="section-number-3">8.18</span> Progressive Web AMPs</h3>
 <div class="outline-text-3" id="text-8-18">
 <p>
 <a href="https://www.smashingmagazine.com/2016/12/progressive-web-amps/">https://www.smashingmagazine.com/2016/12/progressive-web-amps/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgc469fb0" class="outline-3">
-<h3 id="orgc469fb0"><span class="section-number-3">8.19</span> A/B Testing at the Edge with Servers Workers</h3>
+<div id="outline-container-org96f7a99" class="outline-3">
+<h3 id="org96f7a99"><span class="section-number-3">8.19</span> A/B Testing at the Edge with Servers Workers</h3>
 <div class="outline-text-3" id="text-8-19">
 <p>
 <a href="https://www.filamentgroup.com/lab/servers-workers.html">https://www.filamentgroup.com/lab/servers-workers.html</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org045054d" class="outline-3">
-<h3 id="org045054d"><span class="section-number-3">8.20</span> Why and how to use WebP images today</h3>
+<div id="outline-container-org4296c6d" class="outline-3">
+<h3 id="org4296c6d"><span class="section-number-3">8.20</span> Why and how to use WebP images today</h3>
 <div class="outline-text-3" id="text-8-20">
 <p>
 <a href="https://bitsofco.de/why-and-how-to-use-webp-images-today/">https://bitsofco.de/why-and-how-to-use-webp-images-today/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org671e9a5" class="outline-3">
-<h3 id="org671e9a5"><span class="section-number-3">8.21</span> Github actions to optimize image in PR</h3>
+<div id="outline-container-orga2b3c32" class="outline-3">
+<h3 id="orga2b3c32"><span class="section-number-3">8.21</span> Github actions to optimize image in PR</h3>
 <div class="outline-text-3" id="text-8-21">
 <p>
 <a href="https://github.com/marketplace/actions/image-actions">https://github.com/marketplace/actions/image-actions</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org1704302" class="outline-3">
-<h3 id="org1704302"><span class="section-number-3">8.22</span> New CSS property aspect-ratios</h3>
+<div id="outline-container-org8db00f6" class="outline-3">
+<h3 id="org8db00f6"><span class="section-number-3">8.22</span> New CSS property aspect-ratios</h3>
 <div class="outline-text-3" id="text-8-22">
 <p>
 <a href="https://drafts.csswg.org/css-sizing-4/#ratios">https://drafts.csswg.org/css-sizing-4/#ratios</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orge9e7d8b" class="outline-3">
-<h3 id="orge9e7d8b"><span class="section-number-3">8.23</span> Essential image Optimization(long good article)</h3>
+<div id="outline-container-orgba2ba7d" class="outline-3">
+<h3 id="orgba2ba7d"><span class="section-number-3">8.23</span> Essential image Optimization(long good article)</h3>
 <div class="outline-text-3" id="text-8-23">
 <p>
 <a href="https://images.guide/">https://images.guide/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org5040cee" class="outline-3">
-<h3 id="org5040cee"><span class="section-number-3">8.24</span> A comprehensive guide to font loading strategies</h3>
+<div id="outline-container-org2629f82" class="outline-3">
+<h3 id="org2629f82"><span class="section-number-3">8.24</span> A comprehensive guide to font loading strategies</h3>
 <div class="outline-text-3" id="text-8-24">
 <p>
 <a href="https://www.zachleat.com/web/comprehensive-webfonts/">https://www.zachleat.com/web/comprehensive-webfonts/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org49b0e09" class="outline-3">
-<h3 id="org49b0e09"><span class="section-number-3">8.25</span> Improving Smashing Magazine’s Web Performance: A Case Study</h3>
+<div id="outline-container-orgf46aaac" class="outline-3">
+<h3 id="orgf46aaac"><span class="section-number-3">8.25</span> Improving Smashing Magazine’s Web Performance: A Case Study</h3>
 <div class="outline-text-3" id="text-8-25">
 <p>
 <a href="https://www.smashingmagazine.com/2014/09/improving-smashing-magazine-performance-case-study/">https://www.smashingmagazine.com/2014/09/improving-smashing-magazine-performance-case-study/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org5b9a81d" class="outline-3">
-<h3 id="org5b9a81d"><span class="section-number-3">8.26</span> Unused CSS/JS</h3>
+<div id="outline-container-org36ea425" class="outline-3">
+<h3 id="org36ea425"><span class="section-number-3">8.26</span> Unused CSS/JS</h3>
 <div class="outline-text-3" id="text-8-26">
 <p>
 <a href="https://vimeo.com/235431630#t=11m37s">https://vimeo.com/235431630#t=11m37s</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orge74b4b9" class="outline-3">
-<h3 id="orge74b4b9"><span class="section-number-3">8.27</span> How to debug react performance</h3>
+<div id="outline-container-org2d527be" class="outline-3">
+<h3 id="org2d527be"><span class="section-number-3">8.27</span> How to debug react performance</h3>
 <div class="outline-text-3" id="text-8-27">
 <p>
 <a href="https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad">https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org1fc47c3" class="outline-3">
-<h3 id="org1fc47c3"><span class="section-number-3">8.28</span> Puppter to collect CSS/JS coverage</h3>
+<div id="outline-container-orgf2c2463" class="outline-3">
+<h3 id="orgf2c2463"><span class="section-number-3">8.28</span> Puppter to collect CSS/JS coverage</h3>
 <div class="outline-text-3" id="text-8-28">
 <p>
 <a href="https://twitter.com/matijagrcic/status/1060863620568043520">https://twitter.com/matijagrcic/status/1060863620568043520</a>
 </p>
 </div>
 </div>
-<div id="outline-container-orgbc3d5f8" class="outline-3">
-<h3 id="orgbc3d5f8"><span class="section-number-3">8.29</span> A Netflix Web Performance Case Study</h3>
+<div id="outline-container-org53d7748" class="outline-3">
+<h3 id="org53d7748"><span class="section-number-3">8.29</span> A Netflix Web Performance Case Study</h3>
 <div class="outline-text-3" id="text-8-29">
 <p>
 <a href="https://medium.com/dev-channel/a-netflix-web-performance-case-study-c0bcde26a9d9">https://medium.com/dev-channel/a-netflix-web-performance-case-study-c0bcde26a9d9</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org99952b1" class="outline-3">
-<h3 id="org99952b1"><span class="section-number-3">8.30</span> How to read a WebPageTest Waterfall View chart</h3>
+<div id="outline-container-orgde9c4c2" class="outline-3">
+<h3 id="orgde9c4c2"><span class="section-number-3">8.30</span> How to read a WebPageTest Waterfall View chart</h3>
 <div class="outline-text-3" id="text-8-30">
 <p>
 <a href="https://nooshu.github.io/blog/2019/10/02/how-to-read-a-wpt-waterfall-chart/">https://nooshu.github.io/blog/2019/10/02/how-to-read-a-wpt-waterfall-chart/</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org2d951d8" class="outline-3">
-<h3 id="org2d951d8"><span class="section-number-3">8.31</span> How to read a WebPageTest Connection View chart</h3>
+<div id="outline-container-org2bc236c" class="outline-3">
+<h3 id="org2bc236c"><span class="section-number-3">8.31</span> How to read a WebPageTest Connection View chart</h3>
 <div class="outline-text-3" id="text-8-31">
 <p>
 <a href="https://nooshu.github.io/blog/2019/12/30/how-to-read-a-wpt-connection-view-chart/">https://nooshu.github.io/blog/2019/12/30/how-to-read-a-wpt-connection-view-chart/</a>** TODO [#B] JCL heading compoennts issue
@@ -749,14 +749,14 @@ Reflow
 </div>
 </div>
 </div>
-<div id="outline-container-org8bd127b" class="outline-2">
-<h2 id="org8bd127b"><span class="section-number-2">9</span> Style props conflict with native style props, suggest to change a name otherwise it will cause eslint issue</h2>
+<div id="outline-container-org6fe38f5" class="outline-2">
+<h2 id="org6fe38f5"><span class="section-number-2">9</span> Style props conflict with native style props, suggest to change a name otherwise it will cause eslint issue</h2>
 </div>
-<div id="outline-container-org8b915c7" class="outline-2">
-<h2 id="org8b915c7"><span class="section-number-2">10</span> Cleanify the style props usage, it looks like a formatLevel</h2>
+<div id="outline-container-orgabc7192" class="outline-2">
+<h2 id="orgabc7192"><span class="section-number-2">10</span> Cleanify the style props usage, it looks like a formatLevel</h2>
 </div>
-<div id="outline-container-org5972ba0" class="outline-2">
-<h2 id="org5972ba0"><span class="section-number-2">11</span> Actively let everyone in the team contribute to JCL, rather than just notifty everyone it's updated</h2>
+<div id="outline-container-org18e9e65" class="outline-2">
+<h2 id="org18e9e65"><span class="section-number-2">11</span> Actively let everyone in the team contribute to JCL, rather than just notifty everyone it's updated</h2>
 </div>
 </div>
 </body>

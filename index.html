@@ -60,8 +60,6 @@
 
      .subsite__back {
          position: fixed;
-         right: 10%;
-         bottom: 5%;
          right: 6%;
          bottom: 3%;
          width: 50px;
@@ -472,9 +470,13 @@
             <section class="subsite__hero">
                 <h2 class="subsite__name">reading</h2>
             </section>
-            <section class="subsite__body wip">
-                Work In Progress
-            </section>
+            <ul class="subsite__body" id="reading">
+            </ul>
+            <template id="reading-template">
+                <li>
+                    <a class="subsite--slides__link" href="%%link%%">%%title%%</a>
+                </li>
+            </template>
             <a href="#home" class="subsite__back"></a>
         </section>
         <section class="subsite subsite--slides">

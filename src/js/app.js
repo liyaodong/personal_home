@@ -8,8 +8,8 @@
                 handler: loadBlog,
             },
             {
-                match: name => name === 'photos',
-                handler: loadPhotos,
+                match: name => name === 'reading',
+                handler: loadReading,
             },
         ];
 
@@ -44,11 +44,18 @@
         // const shadow = $blog.attachShadow({ mode: 'open', delegatesFocus: false });
     };
 
-    const loadPhotos = () => {
-        const twitterScriptUrl = document.querySelector('.twitter-timeline').dataset.src;
-        const twitterScript = document.createElement('script');
-        twitterScript.src = twitterScriptUrl;
-        document.body.append(twitterScript);
+    const loadReading = () => {
+        fetch('/reading-list.json').then(res => res.json()).then(data => {
+            const templateNode = document.querySelector('#reading-template');
+
+            const generate = params => {
+                return Object.keys(params).reduce((acc, key) => {
+                    return acc.replace(`%%${key}%%`, params[key])
+                }, templateNode.innerHTML).trim();
+            }
+
+            document.querySelector('#reading').innerHTML = data.list.map(x => generate(x));
+        });
     };
 
     updateSubsite(); // for first page load
