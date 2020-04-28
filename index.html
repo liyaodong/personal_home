@@ -311,11 +311,11 @@
          padding: 0 10px;
      }
 
-    .subsite--slides li {
-        margin: 15px 5px;
-    }
+     .subsite__link li {
+         margin: 15px 5px;
+     }
 
-     .subsite--slides__link {
+     .subsite__link__item {
         font-size: 20px;
         padding: 5px 15px;
         display: inline-block;
@@ -328,7 +328,7 @@
         transition: all 300ms;
      }
 
-     .subsite--slides__link:hover {
+     .subsite__link__item:hover {
         background-color: #f1efe6;
         box-shadow: 0 2px 5px #d6d6d6;
      }
@@ -470,11 +470,11 @@
             <section class="subsite__hero">
                 <h2 class="subsite__name">reading</h2>
             </section>
-            <ul class="subsite__body" id="reading">
+            <ul class="subsite__body subsite__link" id="reading">
             </ul>
             <template id="reading-template">
                 <li>
-                    <a class="subsite--slides__link" href="%%link%%">%%title%%</a>
+                    <a class="subsite__link__item" href="%%link%%">%%title%%</a>
                 </li>
             </template>
             <a href="#home" class="subsite__back"></a>
@@ -484,17 +484,17 @@
                 <h2 class="subsite__name">slides</h2>
             </section>
             <section class="subsite__body">
-                <ul>
-                    <li><a class="subsite--slides__link" href="https://liyaodong.com/micro-frontends/session/index.html" target="_blank">Introduce to Micro Frontends</a></li>
-                    <li><a class="subsite--slides__link" href="https://bit.ly/2019PWAMP" target="_blank">PWA + AMP 构建超快 Web App</a></li>
-                    <li><a class="subsite--slides__link" href="https://docs.google.com/presentation/d/1TZKG8NYTZUVzxso66STZDhk2HbpUDUiKPd7K563HsFM" target="_blank">How browser rending engine works</a></li>
-                    <li><a class="subsite--slides__link" href="https://liyaodong.com/introduce_to_react_hooks/README.html" target="_blank">Introduce to React Hooks</a></li>
-                    <li><a class="subsite--slides__link" href="https://liyaodong.com/amp_stories/amp.html" target="_blank">Build blazing fast website with AMP</a></li>
-                    <li><a class="subsite--slides__link" href="https://liyaodong.com/io2019-recap/web-components.html" target="_blank">Web Components introduce</a></li>
-                    <li><a class="subsite--slides__link" href="https://liyaodong.com/google_io_2018_redux/google_io_2018_redux.html" target="_blank">Google I/O 2018 Redux</a></li>
-                    <li><a class="subsite--slides__link" href="https://liyaodong.com/css-engineering/#/" target="_blank">CSS工程化与调试之路</a></li>
-                    <li><a class="subsite--slides__link" href="https://liyaodong.com/introduce_electron/" target="_blank">Desktop app development with frontend tech</a></li>
-                    <li><a class="subsite--slides__link" href="https://www.icloud.com/keynote/07O5BBcdW7VdUY4DroE56xgSA#LambdaCalculus" target="_blank">Lambda 演算 —— 从入门到放弃</a></li>
+                <ul class="subsite__link">
+                    <li><a class="subsite__link__item" href="https://liyaodong.com/micro-frontends/session/index.html" target="_blank">Introduce to Micro Frontends</a></li>
+                    <li><a class="subsite__link__item" href="https://bit.ly/2019PWAMP" target="_blank">PWA + AMP 构建超快 Web App</a></li>
+                    <li><a class="subsite__link__item" href="https://docs.google.com/presentation/d/1TZKG8NYTZUVzxso66STZDhk2HbpUDUiKPd7K563HsFM" target="_blank">How browser rending engine works</a></li>
+                    <li><a class="subsite__link__item" href="https://liyaodong.com/introduce_to_react_hooks/README.html" target="_blank">Introduce to React Hooks</a></li>
+                    <li><a class="subsite__link__item" href="https://liyaodong.com/amp_stories/amp.html" target="_blank">Build blazing fast website with AMP</a></li>
+                    <li><a class="subsite__link__item" href="https://liyaodong.com/io2019-recap/web-components.html" target="_blank">Web Components introduce</a></li>
+                    <li><a class="subsite__link__item" href="https://liyaodong.com/google_io_2018_redux/google_io_2018_redux.html" target="_blank">Google I/O 2018 Redux</a></li>
+                    <li><a class="subsite__link__item" href="https://liyaodong.com/css-engineering/#/" target="_blank">CSS工程化与调试之路</a></li>
+                    <li><a class="subsite__link__item" href="https://liyaodong.com/introduce_electron/" target="_blank">Desktop app development with frontend tech</a></li>
+                    <li><a class="subsite__link__item" href="https://www.icloud.com/keynote/07O5BBcdW7VdUY4DroE56xgSA#LambdaCalculus" target="_blank">Lambda 演算 —— 从入门到放弃</a></li>
                 </ul>
             </section>
             <a href="#home" class="subsite__back"></a>
