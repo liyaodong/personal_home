@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "http-server ./",
-    "lang": "gulp",
-    "build": "yarn build:workbox && yarn build:reading",
+    "build": "yarn build:workbox && yarn build:reading && yarn build:lang",
+    "build:lang": "gulp && mv resume-en-US.html resume.html",
     "build:workbox": "workbox injectManifest workbox-config.js",
     "build:reading": "rsync -ru /Users/ydli/Dropbox/notes/reading/* ./reading && rm ./reading/*.org",
     "deploy": "yarn build && yarn commit && git push",
