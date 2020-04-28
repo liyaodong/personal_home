@@ -54,7 +54,7 @@
                 }, templateNode.innerHTML).trim();
             }
 
-            document.querySelector('#reading').innerHTML = data.list.map(x => generate(x));
+            document.querySelector('#reading').innerHTML = data.list.map(x => generate(x)).join('');
         });
     };
 
