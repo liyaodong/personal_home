@@ -14801,8 +14801,12 @@ if (workbox) {
     "revision": "5fb9b7f1e94a1d58fb37a6d4c53c9e7b"
   },
   {
+    "url": "resume-private.html",
+    "revision": "6d89fd3a9ebc72c5bf32c566efad8ae1"
+  },
+  {
     "url": "resume-zh-CN.html",
-    "revision": "227a8d0f5a2b7785ff0f57005724df4b"
+    "revision": "23134d39ea642884062eb5a7bd1ebd46"
   },
   {
     "url": "resume.html",

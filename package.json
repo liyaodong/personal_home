@@ -10,7 +10,7 @@
     "build:lang": "gulp && mv resume-en-US.html resume.html",
     "build:workbox": "workbox injectManifest workbox-config.js",
     "build:reading": "rsync -ru /Users/ydli/Dropbox/notes/reading/* ./reading && rm ./reading/*.org && node ./generateReadingList.js",
-    "deploy": "yarn build && sleep 2 && yarn commit && git push && noti done",
+    "deploy": "yarn build && sleep 2 && yarn commit && git push",
     "commit": "git commit -a -m \"Deploy Site: `date '+%Y-%m/%d %H:%M:%S'`\""
   },
   "devDependencies": {
