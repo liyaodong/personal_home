@@ -106,7 +106,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "d230f014e2cbe4fb97fa6cb761b0e24b"
+    "revision": "6699bcd73f2ab5382967b3382687d59f"
   },
   {
     "url": "node_modules/ansi-colors/index.js",
@@ -14802,7 +14802,7 @@ if (workbox) {
   },
   {
     "url": "resume-private.html",
-    "revision": "6d89fd3a9ebc72c5bf32c566efad8ae1"
+    "revision": "3a6ebade41cf8de060e59efa01648617"
   },
   {
     "url": "resume-zh-CN.html",
