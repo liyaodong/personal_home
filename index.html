@@ -137,19 +137,19 @@
      }
 
      .subsite--blog .subsite__body {
-        flex-grow: 1;
-        position: relative;
-        width: 100%;
-        margin: 0;
+         flex-grow: 1;
+         position: relative;
+         width: 100%;
+         margin: 0;
      }
 
-    .blog-iframe {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
+     .blog-iframe {
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+     }
 
      .subsite--blog__more {
          text-align: center;
@@ -262,17 +262,17 @@
          z-index: -1;
      }
 
-    @keyframes bgGradient {
-        0% {
-            background-position: 0% 50%
-        }
-        50% {
-            background-position: 100% 50%
-        }
-        100% {
-            background-position: 0% 50%
-        }
-    }
+     @keyframes bgGradient {
+         0% {
+             background-position: 0% 50%
+         }
+         50% {
+             background-position: 100% 50%
+         }
+         100% {
+             background-position: 0% 50%
+         }
+     }
 
      .subsite--blog .subsite__hero::after,
      .subsite-list__item--blog::after {
@@ -316,28 +316,28 @@
      }
 
      .subsite__link__item {
-        font-size: 20px;
-        padding: 5px 15px;
-        display: inline-block;
-        text-decoration: none;
-        border: 1px solid #c3b28b;
-        border-radius: 2px;
-        background-color: #e2d2b0;
-        color: #2d2b2b;
-        box-shadow: 0 3px 10px #d6d6d6;
-        transition: all 300ms;
+         font-size: 20px;
+         padding: 5px 15px;
+         display: inline-block;
+         text-decoration: none;
+         border: 1px solid #c3b28b;
+         border-radius: 2px;
+         background-color: #e2d2b0;
+         color: #2d2b2b;
+         box-shadow: 0 3px 10px #d6d6d6;
+         transition: all 300ms;
      }
 
      .subsite__link__item:hover {
-        background-color: #f1efe6;
-        box-shadow: 0 2px 5px #d6d6d6;
+         background-color: #f1efe6;
+         box-shadow: 0 2px 5px #d6d6d6;
      }
      /* desktop media querys */
      @media screen and (min-width: 720px) {
          .site-home {
              background-color: #fff;
              background: linear-gradient(-45deg, hsla(0, 80%, 81%, 1), hsla(180, 80%, 81%, 1), hsla(360, 80%, 81%, 1));
-	         background-size: 400% 400%;
+	           background-size: 400% 400%;
              animation: bgGradient 15s ease infinite;
          }
 
@@ -394,6 +394,26 @@
              width: 80%;
              text-align: center;
              border-radius: 4px 4px 0 0;
+         }
+     }
+
+     .skeleton {
+         border: 1px solid #dfdfdf;
+         list-style-type: none;
+         width: 200px;
+         height: 25px;
+         background-image: linear-gradient(90deg, #F4F4F4 0px, rgba(229,229,229,0.8) 40px, #F4F4F4 80px);
+         background-size: 600px;
+         animation: shine-lines 2.0s infinite ease-out;
+         border-radius: 2px;
+     }
+
+     @keyframes shine-lines {
+         0% {
+             background-position: -100px;
+         }
+         40%, 100% {
+             background-position: 200px;
          }
      }
     </style>
@@ -471,6 +491,11 @@
                 <h2 class="subsite__name">reading</h2>
             </section>
             <ul class="subsite__body subsite__link" id="reading">
+                <li class="skeleton"></li>
+                <li class="skeleton"></li>
+                <li class="skeleton"></li>
+                <li class="skeleton"></li>
+                <li class="skeleton"></li>
             </ul>
             <template id="reading-template">
                 <li>
