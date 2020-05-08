@@ -106,7 +106,7 @@ if (workbox) {
   },
   {
     "url": "index.html",
-    "revision": "6699bcd73f2ab5382967b3382687d59f"
+    "revision": "c89bb41f67828b3b31402ca7cbb338c3"
   },
   {
     "url": "node_modules/ansi-colors/index.js",
@@ -14794,7 +14794,7 @@ if (workbox) {
   },
   {
     "url": "reading/redux.html",
-    "revision": "e2a32b91824e77910e382fdc06633460"
+    "revision": "8894781fc69dd1ebde516740f2f680d2"
   },
   {
     "url": "reading/w3c-standard.html",
