@@ -14793,6 +14793,10 @@ if (workbox) {
     "revision": "850d9ba673b598a13ee5b6b2ddca5ddd"
   },
   {
+    "url": "reading/redux.html",
+    "revision": "902e622af1dfce408c83de53750aca53"
+  },
+  {
     "url": "reading/w3c-standard.html",
     "revision": "2baa78df85d02ef28d41c4feeace4b9e"
   },
