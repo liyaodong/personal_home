@@ -14794,7 +14794,7 @@ if (workbox) {
   },
   {
     "url": "reading/redux.html",
-    "revision": "902e622af1dfce408c83de53750aca53"
+    "revision": "e2a32b91824e77910e382fdc06633460"
   },
   {
     "url": "reading/w3c-standard.html",

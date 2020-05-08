@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-05-08 Fri 14:15 -->
+<!-- 2020-05-08 Fri 14:16 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Everything about redux</title>
@@ -245,66 +245,66 @@ for the JavaScript code in this tag.
 <div id="content">
 <h1 class="title">Everything about redux</h1>
 
-<div id="outline-container-org81b921f" class="outline-2">
-<h2 id="org81b921f"><span class="section-number-2">1</span> Style Guide</h2>
+<div id="outline-container-org82bc8c3" class="outline-2">
+<h2 id="org82bc8c3"><span class="section-number-2">1</span> Style Guide</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 All the style guide was generated from <a href="https://redux.js.org/style-guide/style-guide">the official style guide</a>.
 </p>
 </div>
 
-<div id="outline-container-org447e8ff" class="outline-3">
-<h3 id="org447e8ff"><span class="section-number-3">1.1</span> Do not mutate state&#xa0;&#xa0;&#xa0;<span class="tag"><span class="essential">essential</span></span></h3>
+<div id="outline-container-org58a790e" class="outline-3">
+<h3 id="org58a790e"><span class="section-number-3">1.1</span> Do not mutate state&#xa0;&#xa0;&#xa0;<span class="tag"><span class="essential">essential</span></span></h3>
 </div>
-<div id="outline-container-orgacdcfd0" class="outline-3">
-<h3 id="orgacdcfd0"><span class="section-number-3">1.2</span> Reducers and it's sub utils Must Not Have Side Effects&#xa0;&#xa0;&#xa0;<span class="tag"><span class="essential">essential</span></span></h3>
+<div id="outline-container-orgf441ffe" class="outline-3">
+<h3 id="orgf441ffe"><span class="section-number-3">1.2</span> Reducers and it's sub utils Must Not Have Side Effects&#xa0;&#xa0;&#xa0;<span class="tag"><span class="essential">essential</span></span></h3>
 </div>
-<div id="outline-container-org8519710" class="outline-3">
-<h3 id="org8519710"><span class="section-number-3">1.3</span> Do Not Put Non-Serializable Values in State or Actions, except middlewares like redux-thunk&#xa0;&#xa0;&#xa0;<span class="tag"><span class="essential">essential</span></span></h3>
+<div id="outline-container-orgc536e6c" class="outline-3">
+<h3 id="orgc536e6c"><span class="section-number-3">1.3</span> Do Not Put Non-Serializable Values in State or Actions, except middlewares like redux-thunk&#xa0;&#xa0;&#xa0;<span class="tag"><span class="essential">essential</span></span></h3>
 </div>
-<div id="outline-container-orgf91b3e3" class="outline-3">
-<h3 id="orgf91b3e3"><span class="section-number-3">1.4</span> Only One Redux Store Per App&#xa0;&#xa0;&#xa0;<span class="tag"><span class="essential">essential</span></span></h3>
+<div id="outline-container-org9fb4df7" class="outline-3">
+<h3 id="org9fb4df7"><span class="section-number-3">1.4</span> Only One Redux Store Per App&#xa0;&#xa0;&#xa0;<span class="tag"><span class="essential">essential</span></span></h3>
 </div>
-<div id="outline-container-org39e43f5" class="outline-3">
-<h3 id="org39e43f5"><span class="section-number-3">1.5</span> Use Redux Toolkit for Writing Redux Logic&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org870c9be" class="outline-3">
+<h3 id="org870c9be"><span class="section-number-3">1.5</span> Use Redux Toolkit for Writing Redux Logic&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 </div>
-<div id="outline-container-org15ba0d7" class="outline-3">
-<h3 id="org15ba0d7"><span class="section-number-3">1.6</span> Use Immer for Writing Immutable Updates&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-orgfeb6417" class="outline-3">
+<h3 id="orgfeb6417"><span class="section-number-3">1.6</span> Use Immer for Writing Immutable Updates&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 </div>
-<div id="outline-container-orge169ac6" class="outline-3">
-<h3 id="orge169ac6"><span class="section-number-3">1.7</span> Structure Files as Feature Folders or Ducks&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org4448265" class="outline-3">
+<h3 id="org4448265"><span class="section-number-3">1.7</span> Structure Files as Feature Folders or Ducks&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-7">
 <p>
 Ducks want you organize the redux store as a single file, single file for action/reducer/selector/thunks etc
 </p>
 </div>
 </div>
-<div id="outline-container-org0f07967" class="outline-3">
-<h3 id="org0f07967"><span class="section-number-3">1.8</span> Put as Much Logic as Possible in Reducers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org5413cc2" class="outline-3">
+<h3 id="org5413cc2"><span class="section-number-3">1.8</span> Put as Much Logic as Possible in Reducers&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-8">
 <p>
 Since people know reducer logic should be immutable and reducer is more easier to test. write into some other place like action creator may forgot state is not mutable
 </p>
 </div>
 </div>
-<div id="outline-container-orgb0df8c3" class="outline-3">
-<h3 id="orgb0df8c3"><span class="section-number-3">1.9</span> Reducers Should Own the State Shape&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org34cee76" class="outline-3">
+<h3 id="org34cee76"><span class="section-number-3">1.9</span> Reducers Should Own the State Shape&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-9">
 <p>
 Don't trust the action.payload and decide the state by this payload. bad example: <code>return { ...state, ...action.payload }</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org3112fd4" class="outline-3">
-<h3 id="org3112fd4"><span class="section-number-3">1.10</span> Name State Slices Based On the Stored Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org77b02cc" class="outline-3">
+<h3 id="org77b02cc"><span class="section-number-3">1.10</span> Name State Slices Based On the Stored Data&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-10">
 <p>
 The slice name should be some thing like `user` `posts` rather than `userReducer` `postsReducer`
 </p>
 </div>
 </div>
-<div id="outline-container-org3ae0de8" class="outline-3">
-<h3 id="org3ae0de8"><span class="section-number-3">1.11</span> Treat Reducers as State Machines&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org022d285" class="outline-3">
+<h3 id="org022d285"><span class="section-number-3">1.11</span> Treat Reducers as State Machines&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-11">
 <p>
 If the state can depends on current state, then better do it like this. don't rely on all the things from actions. don't write two many if-else outside of reducer.
@@ -361,47 +361,47 @@ The post <a href="https://kentcdodds.com/blog/make-impossible-states-impossible"
 </div>
 </div>
 </div>
-<div id="outline-container-orga542856" class="outline-3">
-<h3 id="orga542856"><span class="section-number-3">1.12</span> Normalize Complex Nested/Relational State&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-orgf8a8c5f" class="outline-3">
+<h3 id="orgf8a8c5f"><span class="section-number-3">1.12</span> Normalize Complex Nested/Relational State&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 </div>
-<div id="outline-container-orgb0fe2e7" class="outline-3">
-<h3 id="orgb0fe2e7"><span class="section-number-3">1.13</span> Model Actions as Events, Not Setters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org7d8019b" class="outline-3">
+<h3 id="org7d8019b"><span class="section-number-3">1.13</span> Model Actions as Events, Not Setters&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-13">
 <p>
 Setters usually more than events, i.e. `food/orderAdded, pizza: 1, coke: 1` vs `orders/setPizzasOrdere, 1` `orders/setCokesOrdered, 1`
 </p>
 </div>
 </div>
-<div id="outline-container-orge47c53b" class="outline-3">
-<h3 id="orge47c53b"><span class="section-number-3">1.14</span> Write Meaningful Action Names&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-orgecbdf2d" class="outline-3">
+<h3 id="orgecbdf2d"><span class="section-number-3">1.14</span> Write Meaningful Action Names&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-14">
 <p>
 Actions should be written with meaningful, informative, descriptive type fields. This could help on debugging and code readability.
 </p>
 </div>
 </div>
-<div id="outline-container-org59b2693" class="outline-3">
-<h3 id="org59b2693"><span class="section-number-3">1.15</span> Allow Many Reducers to Respond to the Same Action&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org3d788ad" class="outline-3">
+<h3 id="org3d788ad"><span class="section-number-3">1.15</span> Allow Many Reducers to Respond to the Same Action&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-15">
 <p>
 Smaller reducer lead to smaller function, by allow many reducer listen on single action, this would help you lead smaller logic.
 </p>
 </div>
 </div>
-<div id="outline-container-orge4bf790" class="outline-3">
-<h3 id="orge4bf790"><span class="section-number-3">1.16</span> Avoid Dispatching Many Actions Sequentially&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-orgdbc52c3" class="outline-3">
+<h3 id="orgdbc52c3"><span class="section-number-3">1.16</span> Avoid Dispatching Many Actions Sequentially&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-16">
 <p>
 Better to use single "event" like action instead, because multiple dispatch may cause unnecessary UI update. if you really can't avoid this, try the <a href="https://react-redux.js.org/api/batch">batch from react-redux</a>
 </p>
 </div>
 </div>
-<div id="outline-container-org58da483" class="outline-3">
-<h3 id="org58da483"><span class="section-number-3">1.17</span> Evaluate Where Each Piece of State Should Live&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org94667e2" class="outline-3">
+<h3 id="org94667e2"><span class="section-number-3">1.17</span> Evaluate Where Each Piece of State Should Live&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-17">
 </div>
-<div id="outline-container-org5dc918d" class="outline-4">
-<h4 id="org5dc918d"><span class="section-number-4">1.17.1</span> Which kind of data should put into redux</h4>
+<div id="outline-container-org5a142f2" class="outline-4">
+<h4 id="org5a142f2"><span class="section-number-4">1.17.1</span> Which kind of data should put into redux</h4>
 <div class="outline-text-4" id="text-1-17-1">
 <p>
 Do other parts of the application care about this data?
@@ -414,16 +414,16 @@ Do you want to keep this data consistent while hot-reloading UI components (whic
 </div>
 </div>
 </div>
-<div id="outline-container-orgd2aed16" class="outline-3">
-<h3 id="orgd2aed16"><span class="section-number-3">1.18</span> Connect More Components to Read Data from the Store&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org111d71f" class="outline-3">
+<h3 id="org111d71f"><span class="section-number-3">1.18</span> Connect More Components to Read Data from the Store&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-18">
 <p>
 Have multiple connect or useSelector is not a bad thing.
 </p>
 </div>
 </div>
-<div id="outline-container-org8bea195" class="outline-3">
-<h3 id="org8bea195"><span class="section-number-3">1.19</span> Use the Object Shorthand Form of mapDispatch with connect&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org3a478a2" class="outline-3">
+<h3 id="org3a478a2"><span class="section-number-3">1.19</span> Use the Object Shorthand Form of mapDispatch with connect&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-19">
 <p>
 Under the hood react-redux will call `bindActionCreator` for you.
@@ -440,38 +440,38 @@ Under the hood react-redux will call `bindActionCreator` for you.
 </div>
 </div>
 </div>
-<div id="outline-container-orgbc44646" class="outline-3">
-<h3 id="orgbc44646"><span class="section-number-3">1.20</span> Call useSelector Multiple Times in Function Components&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-orgd7596ba" class="outline-3">
+<h3 id="orgd7596ba"><span class="section-number-3">1.20</span> Call useSelector Multiple Times in Function Components&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 </div>
-<div id="outline-container-orgebf2af4" class="outline-3">
-<h3 id="orgebf2af4"><span class="section-number-3">1.21</span> Use Static Typing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org8ed4b7c" class="outline-3">
+<h3 id="org8ed4b7c"><span class="section-number-3">1.21</span> Use Static Typing&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-21">
 <p>
 Use flow type or typescript or jsdocs based typescript to define the type shape of your store state. this can avoid most common mistakes.
 </p>
 </div>
 </div>
-<div id="outline-container-org0c476c8" class="outline-3">
-<h3 id="org0c476c8"><span class="section-number-3">1.22</span> Use the Redux DevTools Extension for Debugging&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-org03846f6" class="outline-3">
+<h3 id="org03846f6"><span class="section-number-3">1.22</span> Use the Redux DevTools Extension for Debugging&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 </div>
-<div id="outline-container-org5e97e04" class="outline-3">
-<h3 id="org5e97e04"><span class="section-number-3">1.23</span> Use Plain JavaScript Objects for State&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
+<div id="outline-container-orgb677859" class="outline-3">
+<h3 id="orgb677859"><span class="section-number-3">1.23</span> Use Plain JavaScript Objects for State&#xa0;&#xa0;&#xa0;<span class="tag"><span class="stronglyRecommended">stronglyRecommended</span></span></h3>
 <div class="outline-text-3" id="text-1-23">
 <p>
 Use immer rather than Immutable.js, it's smaller and easier.
 </p>
 </div>
 </div>
-<div id="outline-container-org05efbdb" class="outline-3">
-<h3 id="org05efbdb"><span class="section-number-3">1.24</span> Write Action Types as domain/eventName&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
+<div id="outline-container-org8f3f71d" class="outline-3">
+<h3 id="org8f3f71d"><span class="section-number-3">1.24</span> Write Action Types as domain/eventName&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
 <div class="outline-text-3" id="text-1-24">
 <p>
 Like <code>todos/addTodo</code>, <code>domain:eventName</code>
 </p>
 </div>
 </div>
-<div id="outline-container-org63862a7" class="outline-3">
-<h3 id="org63862a7"><span class="section-number-3">1.25</span> Write Actions Using the Flux Standard Action Convention&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
+<div id="outline-container-org4c5ccff" class="outline-3">
+<h3 id="org4c5ccff"><span class="section-number-3">1.25</span> Write Actions Using the Flux Standard Action Convention&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
 <div class="outline-text-3" id="text-1-25">
 <p>
 Should always put their data into a payload field
@@ -480,25 +480,25 @@ May have an error field to indicate the action represents a failure of some kind
 </p>
 </div>
 </div>
-<div id="outline-container-orgd1d3393" class="outline-3">
-<h3 id="orgd1d3393"><span class="section-number-3">1.26</span> Use Action Creators&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
+<div id="outline-container-org9a0d236" class="outline-3">
+<h3 id="org9a0d236"><span class="section-number-3">1.26</span> Use Action Creators&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
 </div>
-<div id="outline-container-org8a3e6d6" class="outline-3">
-<h3 id="org8a3e6d6"><span class="section-number-3">1.27</span> Use Thunks for Async Logic&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
+<div id="outline-container-orge99ee8d" class="outline-3">
+<h3 id="orge99ee8d"><span class="section-number-3">1.27</span> Use Thunks for Async Logic&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
 </div>
-<div id="outline-container-orgcc892b5" class="outline-3">
-<h3 id="orgcc892b5"><span class="section-number-3">1.28</span> Move Complex Logic Outside Components&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
+<div id="outline-container-org03013a2" class="outline-3">
+<h3 id="org03013a2"><span class="section-number-3">1.28</span> Move Complex Logic Outside Components&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
 </div>
-<div id="outline-container-orgfa6a15b" class="outline-3">
-<h3 id="orgfa6a15b"><span class="section-number-3">1.29</span> Use Selector Functions to Read from Store State&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
+<div id="outline-container-org5799236" class="outline-3">
+<h3 id="org5799236"><span class="section-number-3">1.29</span> Use Selector Functions to Read from Store State&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
 <div class="outline-text-3" id="text-1-29">
 <p>
 Must use memoized selector and not necessary all the state must create by selector
 </p>
 </div>
 </div>
-<div id="outline-container-orga32f767" class="outline-3">
-<h3 id="orga32f767"><span class="section-number-3">1.30</span> Avoid Putting Form State In Redux&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
+<div id="outline-container-org44d16db" class="outline-3">
+<h3 id="org44d16db"><span class="section-number-3">1.30</span> Avoid Putting Form State In Redux&#xa0;&#xa0;&#xa0;<span class="tag"><span class="recommended">recommended</span></span></h3>
 <div class="outline-text-3" id="text-1-30">
 <p>
 Not all the state should put into redux, since redux need dispatch action and it will call every reducers may cause performance issue.
@@ -506,12 +506,12 @@ Not all the state should put into redux, since redux need dispatch action and it
 </div>
 </div>
 </div>
-<div id="outline-container-orgf8dc506" class="outline-2">
-<h2 id="orgf8dc506"><span class="section-number-2">2</span> Further Reading</h2>
+<div id="outline-container-org67b7f7b" class="outline-2">
+<h2 id="org67b7f7b"><span class="section-number-2">2</span> Further Reading</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org95cbdfe" class="outline-3">
-<h3 id="org95cbdfe"><span class="section-number-3">2.1</span> <span class="todo TODO">TODO</span> Make Impossible States Impossible</h3>
+<div id="outline-container-org9b6f63c" class="outline-3">
+<h3 id="org9b6f63c"><span class="section-number-3">2.1</span> <span class="todo TODO">TODO</span> Make Impossible States Impossible</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 <a href="https://kentcdodds.com/blog/make-impossible-states-impossible">https://kentcdodds.com/blog/make-impossible-states-impossible</a>
